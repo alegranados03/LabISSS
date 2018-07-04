@@ -33,12 +33,17 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.IdEstablecimiento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Region = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Direccion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Telefono = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(625, 397);
+            this.button3.Location = new System.Drawing.Point(446, 397);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(114, 33);
             this.button3.TabIndex = 24;
@@ -57,9 +62,15 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.IdEstablecimiento,
+            this.Region,
+            this.Nombre,
+            this.Direccion,
+            this.Telefono});
             this.dataGridView1.Location = new System.Drawing.Point(38, 68);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(724, 293);
+            this.dataGridView1.Size = new System.Drawing.Size(541, 293);
             this.dataGridView1.TabIndex = 22;
             // 
             // label1
@@ -78,11 +89,36 @@
             this.textBox1.Size = new System.Drawing.Size(441, 20);
             this.textBox1.TabIndex = 20;
             // 
+            // IdEstablecimiento
+            // 
+            this.IdEstablecimiento.HeaderText = "IdEstablecimeinto";
+            this.IdEstablecimiento.Name = "IdEstablecimiento";
+            // 
+            // Region
+            // 
+            this.Region.HeaderText = "Region";
+            this.Region.Name = "Region";
+            // 
+            // Nombre
+            // 
+            this.Nombre.HeaderText = "Nombre";
+            this.Nombre.Name = "Nombre";
+            // 
+            // Direccion
+            // 
+            this.Direccion.HeaderText = "Direccion";
+            this.Direccion.Name = "Direccion";
+            // 
+            // Telefono
+            // 
+            this.Telefono.HeaderText = "Telefono";
+            this.Telefono.Name = "Telefono";
+            // 
             // Ver_Establecimiento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(605, 450);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.dataGridView1);
@@ -103,5 +139,10 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn IdEstablecimiento;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Region;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Direccion;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Telefono;
     }
 }
