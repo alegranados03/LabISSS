@@ -17,13 +17,9 @@ namespace Proyecto_isss_seguro
             InitializeComponent();
         }
 
-        private void button4_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button5_Click(object sender, EventArgs e)
         {
+            this.Hide();
             Menu_Manager vnt0 = new Menu_Manager();
             vnt0.Show();
         }
@@ -31,6 +27,20 @@ namespace Proyecto_isss_seguro
         private void Menu_Usuario_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Agregar_Usuario vnt01 = new Agregar_Usuario();
+            vnt01.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Ver_Usuario vnt02 = new Ver_Usuario();
+            vnt02.Show();
         }
     }
 }

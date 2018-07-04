@@ -58,11 +58,23 @@
     <Compile Include="Agregar_Usuario.Designer.cs">
       <DependentUpon>Agregar_Usuario.cs</DependentUpon>
     </Compile>
-    <Compile Include="Ingresar Muestra.cs">
+    <Compile Include="Establecimientos_ISSS.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Ingresar Muestra.Designer.cs">
-      <DependentUpon>Ingresar Muestra.cs</DependentUpon>
+    <Compile Include="Establecimientos_ISSS.Designer.cs">
+      <DependentUpon>Establecimientos_ISSS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ingresar_Muestra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ingresar_Muestra.Designer.cs">
+      <DependentUpon>Ingresar_Muestra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ingresar_Prueba.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ingresar_Prueba.Designer.cs">
+      <DependentUpon>Ingresar_Prueba.cs</DependentUpon>
     </Compile>
     <Compile Include="Menu_Establecimiento.cs">
       <SubType>Form</SubType>
@@ -88,6 +100,12 @@
     <Compile Include="Menu_Muestra.Designer.cs">
       <DependentUpon>Menu_Muestra.cs</DependentUpon>
     </Compile>
+    <Compile Include="Menu_Prueba.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu_Prueba.Designer.cs">
+      <DependentUpon>Menu_Prueba.cs</DependentUpon>
+    </Compile>
     <Compile Include="Menu_Usuario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -108,17 +126,29 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Ver_Establecimiento.cs">
+    <Compile Include="Establecimientos_MINSAL.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Ver_Establecimiento.Designer.cs">
-      <DependentUpon>Ver_Establecimiento.cs</DependentUpon>
+    <Compile Include="Establecimientos_MINSAL.Designer.cs">
+      <DependentUpon>Establecimientos_MINSAL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ver_Muestra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ver_Muestra.Designer.cs">
+      <DependentUpon>Ver_Muestra.cs</DependentUpon>
     </Compile>
     <Compile Include="Ver_Paciente.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Ver_Paciente.Designer.cs">
       <DependentUpon>Ver_Paciente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ver_Prueba.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ver_Prueba.Designer.cs">
+      <DependentUpon>Ver_Prueba.cs</DependentUpon>
     </Compile>
     <Compile Include="Ver_Usuario.cs">
       <SubType>Form</SubType>
@@ -132,11 +162,17 @@
     <EmbeddedResource Include="Agregar_Usuario.resx">
       <DependentUpon>Agregar_Usuario.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Ingresar Muestra.resx">
-      <DependentUpon>Ingresar Muestra.cs</DependentUpon>
+    <EmbeddedResource Include="Establecimientos_ISSS.resx">
+      <DependentUpon>Establecimientos_ISSS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ingresar_Muestra.resx">
+      <DependentUpon>Ingresar_Muestra.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ingresar_Paciente.resx">
       <DependentUpon>Ingresar_Paciente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ingresar_Prueba.resx">
+      <DependentUpon>Ingresar_Prueba.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menu_Establecimiento.resx">
       <DependentUpon>Menu_Establecimiento.cs</DependentUpon>
@@ -146,6 +182,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Menu_Muestra.resx">
       <DependentUpon>Menu_Muestra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu_Prueba.resx">
+      <DependentUpon>Menu_Prueba.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menu_Usuario.resx">
       <DependentUpon>Menu_Usuario.cs</DependentUpon>
@@ -165,11 +204,17 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Ver_Establecimiento.resx">
-      <DependentUpon>Ver_Establecimiento.cs</DependentUpon>
+    <EmbeddedResource Include="Establecimientos_MINSAL.resx">
+      <DependentUpon>Establecimientos_MINSAL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ver_Muestra.resx">
+      <DependentUpon>Ver_Muestra.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ver_Paciente.resx">
       <DependentUpon>Ver_Paciente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ver_Prueba.resx">
+      <DependentUpon>Ver_Prueba.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ver_Usuario.resx">
       <DependentUpon>Ver_Usuario.cs</DependentUpon>

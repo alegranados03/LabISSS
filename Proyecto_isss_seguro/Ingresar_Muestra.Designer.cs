@@ -1,6 +1,6 @@
 ﻿namespace Proyecto_isss_seguro
 {
-    partial class Form1
+    partial class Ingresar_Muestra
     {
         /// <summary>
         /// Required designer variable.
@@ -104,6 +104,7 @@
             this.textBoxafiliacion.Name = "textBoxafiliacion";
             this.textBoxafiliacion.Size = new System.Drawing.Size(263, 20);
             this.textBoxafiliacion.TabIndex = 57;
+            this.textBoxafiliacion.TextChanged += new System.EventHandler(this.textBoxafiliacion_TextChanged);
             // 
             // label5
             // 

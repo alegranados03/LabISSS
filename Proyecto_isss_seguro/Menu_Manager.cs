@@ -30,8 +30,30 @@ namespace Proyecto_isss_seguro
 
         private void button1_Click(object sender, EventArgs e)
         {
+            this.Hide();
             Menu_Usuario vnt0 = new Menu_Usuario();
             vnt0.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Menu_Paciente vnt1 = new Menu_Paciente();
+            vnt1.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Menu_Muestra vnt2 = new Menu_Muestra();
+            vnt2.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Menu_Establecimiento vnt3 = new Menu_Establecimiento();
+            vnt3.Show();
         }
     }
 }

@@ -37,25 +37,27 @@
             // 
             this.button1.Location = new System.Drawing.Point(12, 12);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(133, 23);
+            this.button1.Size = new System.Drawing.Size(157, 62);
             this.button1.TabIndex = 0;
             this.button1.Text = "Agregar Usuario";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(160, 12);
+            this.button2.Location = new System.Drawing.Point(202, 12);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(129, 23);
+            this.button2.Size = new System.Drawing.Size(157, 62);
             this.button2.TabIndex = 1;
             this.button2.Text = "Ver Usuario";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(86, 41);
+            this.button5.Location = new System.Drawing.Point(117, 128);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(132, 23);
+            this.button5.Size = new System.Drawing.Size(138, 31);
             this.button5.TabIndex = 4;
             this.button5.Text = "Regresar";
             this.button5.UseVisualStyleBackColor = true;
@@ -65,7 +67,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(314, 72);
+            this.ClientSize = new System.Drawing.Size(371, 171);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
