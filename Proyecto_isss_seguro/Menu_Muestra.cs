@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Proyecto_isss_seguro
 {
-    public partial class Form1 : Form
+    public partial class Menu_Muestra : Form
     {
-        public Form1()
+        public Menu_Muestra()
         {
             InitializeComponent();
         }
