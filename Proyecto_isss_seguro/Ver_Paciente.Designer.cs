@@ -32,21 +32,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button3 = new System.Windows.Forms.Button();
-
-            this.IdUsuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.N_Afiliacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Apellido = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Dirección = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Grupo_Sanguineo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Factor_RH = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Genero = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.VIH = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Edad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Telefono = new System.Windows.Forms.DataGridViewTextBoxColumn();
-
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -59,28 +45,6 @@
             this.button2.Text = "Editar";
             this.button2.UseVisualStyleBackColor = true;
             // 
-
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.IdUsuario,
-            this.N_Afiliacion,
-            this.Nombre,
-            this.Apellido,
-            this.Dirección,
-            this.Grupo_Sanguineo,
-            this.Factor_RH,
-            this.Genero,
-            this.VIH,
-            this.Edad,
-            this.Telefono});
-            this.dataGridView1.Location = new System.Drawing.Point(12, 60);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(694, 293);
-            this.dataGridView1.TabIndex = 16;
-            // 
-
             // label1
             // 
             this.label1.AutoSize = true;
@@ -99,82 +63,20 @@
             // 
             // button3
             // 
-
-            this.button3.Location = new System.Drawing.Point(599, 389);
-
             this.button3.Location = new System.Drawing.Point(573, 389);
-
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(114, 33);
             this.button3.TabIndex = 19;
             this.button3.Text = "Cancelar";
             this.button3.UseVisualStyleBackColor = true;
             // 
-
-            // IdUsuario
-            // 
-            this.IdUsuario.HeaderText = "IdUsuario";
-            this.IdUsuario.Name = "IdUsuario";
-            // 
-            // N_Afiliacion
-            // 
-            this.N_Afiliacion.HeaderText = "Nº de Afiliacion";
-            this.N_Afiliacion.Name = "N_Afiliacion";
-            // 
-            // Nombre
-            // 
-            this.Nombre.HeaderText = "Nombre";
-            this.Nombre.Name = "Nombre";
-            // 
-            // Apellido
-            // 
-            this.Apellido.HeaderText = "Apellido";
-            this.Apellido.Name = "Apellido";
-            // 
-            // Dirección
-            // 
-            this.Dirección.HeaderText = "Dirección";
-            this.Dirección.Name = "Dirección";
-            // 
-            // Grupo_Sanguineo
-            // 
-            this.Grupo_Sanguineo.HeaderText = "Grupo Sanguineo";
-            this.Grupo_Sanguineo.Name = "Grupo_Sanguineo";
-            // 
-            // Factor_RH
-            // 
-            this.Factor_RH.HeaderText = "Factor RH";
-            this.Factor_RH.Name = "Factor_RH";
-            // 
-            // Genero
-            // 
-            this.Genero.HeaderText = "Genero";
-            this.Genero.Name = "Genero";
-            // 
-            // VIH
-            // 
-            this.VIH.HeaderText = "VIH";
-            this.VIH.Name = "VIH";
-            // 
-            // Edad
-            // 
-            this.Edad.HeaderText = "Edad";
-            this.Edad.Name = "Edad";
-            // 
-            // Telefono
-            // 
-            this.Telefono.HeaderText = "Telefono";
-            this.Telefono.Name = "Telefono";
-
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(20, 57);
+            this.dataGridView1.Location = new System.Drawing.Point(31, 71);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(667, 315);
+            this.dataGridView1.Size = new System.Drawing.Size(656, 293);
             this.dataGridView1.TabIndex = 20;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
-
             // 
             // Ver_Paciente
             // 
@@ -201,20 +103,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button3;
-
-        private System.Windows.Forms.DataGridViewTextBoxColumn IdUsuario;
-        private System.Windows.Forms.DataGridViewTextBoxColumn N_Afiliacion;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Apellido;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Dirección;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Grupo_Sanguineo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Factor_RH;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Genero;
-        private System.Windows.Forms.DataGridViewTextBoxColumn VIH;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Edad;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Telefono;
-
         private System.Windows.Forms.DataGridView dataGridView1;
-
     }
 }

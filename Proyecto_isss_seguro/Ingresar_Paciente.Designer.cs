@@ -276,6 +276,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Ingresar_Paciente";
             this.Text = "Ingresar_Paciente";
+            this.Load += new System.EventHandler(this.Ingresar_Paciente_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

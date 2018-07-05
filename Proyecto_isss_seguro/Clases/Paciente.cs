@@ -30,11 +30,28 @@ namespace Proyecto_isss_seguro.Clases
         public Paciente() { }
 
         //constructor con parámetros para iniciar un nuevo usuario asignandole valores a sus atributos
+        public Paciente( int id,String noaf, String nomb, String apell, String dir, String gpoSanguineo, String factor, String genero, String vih, int edad, String tel)
+
+        {
+
+            this.idPaciente = id;
+            this.noafiliacion = noaf;
+            this.nombre = nomb;
+            this.apellido = apell;
+            this.direccion = dir;
+            this.grupoSanguineo = gpoSanguineo;
+            this.factorRH = factor;
+            this.genero = genero;
+            this.vih = vih;
+            this.edad = edad;
+            this.telefono = tel;
+
+        }
+        //constructor sin id
         public Paciente( String noaf, String nomb, String apell, String dir, String gpoSanguineo, String factor, String genero, String vih, int edad, String tel)
 
         {
 
-       
             this.noafiliacion = noaf;
             this.nombre = nomb;
             this.apellido = apell;
@@ -63,9 +80,6 @@ namespace Proyecto_isss_seguro.Clases
                 throw ex;
             }
 
-           
-
-         
         }
 
 

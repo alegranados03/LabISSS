@@ -31,6 +31,16 @@ namespace Proyecto_isss_seguro.Clases
             this.contrasena = pass;
             this.tipoUsuario = tipoUser;
         }
+        //constructor sin id
+        public User( String nombs, String apell, String username, String pass, String tipoUser)
+        {
+            this.nombres = nombs;
+            this.apellidos = apell;
+            this.usuario = username;
+            this.contrasena = pass;
+            this.tipoUsuario = tipoUser;
+        }
+
 
 
         public static bool validarSesion(MySqlConnection conexion,String username,String password)
@@ -75,9 +85,9 @@ namespace Proyecto_isss_seguro.Clases
 
 
 
-        public static void insertarUsuario(MySqlConnection conexion, String nombre, String apellido, String usuario, String contrasena, String tipoUser) {
+        public static void insertarUsuario(MySqlConnection conexion, User us) {
             
-            String query = "insert into usuario (IDUSUARIO,NOMBRES,APELLIDOS,USUARIO,CONTRASEÑA,TIPOUSUARIO) VALUES ('','" + nombre + "','" + apellido + "','" + usuario + "','" + contrasena+"','"+tipoUser+"')";
+            String query = "insert into usuario (IDUSUARIO,NOMBRES,APELLIDOS,USUARIO,CONTRASEÑA,TIPOUSUARIO) VALUES ('','" + us.nombres + "','" + us.apellidos + "','" + us.usuario + "','" + us.contrasena+"','"+us.tipoUsuario+"')";
             try
             {
                 MySqlCommand comando = new MySqlCommand(query, conexion);

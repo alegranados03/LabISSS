@@ -13,6 +13,7 @@ namespace Proyecto_isss_seguro
     public partial class Agregar_Usuario : Form
     {
         Clases.Conexion con = new Clases.Conexion();
+        
         public Agregar_Usuario()
         {
             InitializeComponent();
@@ -45,15 +46,17 @@ namespace Proyecto_isss_seguro
 
         private void button1_Click(object sender, EventArgs e)
         {
+            Clases.User us = new Clases.User(textBox1.Text, textBox2.Text, textBox3.Text, textBox4.Text, CmbCargo2.Text);
             try {
                 if (con.conectar()) {
-                    Clases.User.insertarUsuario(con.conexion,textBox1.Text,textBox2.Text,textBox3.Text,textBox4.Text,CmbCargo2.Text);
+                    Clases.User.insertarUsuario(con.conexion,us);
                     MessageBox.Show("Usuario registrado exitosamente");
                 }
             
 
             } catch(MySqlException ex) {
-                MessageBox.Show("error es probable que el usuario ya esté registrado");
+                
+                MessageBox.Show("error es probable que el usuario ya esté registrado"+ex);
             }
 
             textBox1.Text = "";

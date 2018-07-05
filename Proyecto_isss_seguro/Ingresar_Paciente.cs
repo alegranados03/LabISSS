@@ -14,7 +14,7 @@ namespace Proyecto_isss_seguro
     public partial class Ingresar_Paciente : Form
     {
         Clases.Conexion con = new Clases.Conexion();
-        Clases.Paciente paciente = new Clases.Paciente();
+
         public Ingresar_Paciente()
         {
             InitializeComponent();
@@ -38,8 +38,23 @@ namespace Proyecto_isss_seguro
                 MessageBox.Show("error es probable que el número de afiliación ya esté registrado");
             }
 
+            textBoxafiliacion.Text = "";
+            textBoxnombres.Text = "";
+            textBoxapellidos.Text = "";
+            textBoxdireccion.Text = "";
+            comboBoxgruposanguineo.Text = "";
+            comboBoxfactorrh.Text = "";
+            comboBoxgenero.Text = "";
+            textBoxvih.Text = "";
+            textBoxedad.Text = "";
+            textBoxtelefono.Text = "";
 
             con.desconectar();
+        }
+
+        private void Ingresar_Paciente_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

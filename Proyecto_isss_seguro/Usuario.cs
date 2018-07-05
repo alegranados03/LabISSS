@@ -34,7 +34,7 @@ namespace Proyecto_isss_seguro
                         String tipoUser = obtenerTipoUsuario(con.conexion, txtU.Text, txtP.Text);
                        if( tipoUser== "ADMIN")
                         {
-                            this.Hide();
+                            this.Close();
                             Menu_Manager vnt1 = new Menu_Manager();
                             vnt1.Show();
 
@@ -52,7 +52,7 @@ namespace Proyecto_isss_seguro
             }
             catch (Exception ex)
             {
-                MessageBox.Show("error en conexion");
+                MessageBox.Show("error en conexion"+ex);
             }
             con.desconectar();
         }
