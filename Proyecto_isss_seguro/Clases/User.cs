@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
+using System.Windows.Forms;
+using System.Data;
 
 namespace Proyecto_isss_seguro.Clases
 {
@@ -71,6 +73,44 @@ namespace Proyecto_isss_seguro.Clases
             }
         }
 
+
+
+        public static void insertarUsuario(MySqlConnection conexion, String nombre, String apellido, String usuario, String contrasena, String tipoUser) {
+            
+            String query = "insert into usuario (IDUSUARIO,NOMBRES,APELLIDOS,USUARIO,CONTRASEÑA,TIPOUSUARIO) VALUES ('','" + nombre + "','" + apellido + "','" + usuario + "','" + contrasena+"','"+tipoUser+"')";
+            try
+            {
+                MySqlCommand comando = new MySqlCommand(query, conexion);
+                Int32 lector = (Int32)comando.ExecuteNonQuery();
+                
+            }
+            catch(MySqlException ex)
+            { throw ex; }
+
+
+
+        }
+
+        public static void listarUsuarios(MySqlConnection conexion, DataGridView dgv)
+        {
+            DataTable datat = new DataTable();
+
+            try
+            {
+                MySqlCommand comando = new MySqlCommand(string.Format(("SELECT IDUSUARIO, NOMBRES, APELLIDOS, USUARIO, TIPOUSUARIO FROM usuario")), conexion);
+                MySqlDataAdapter dataAdapter = new MySqlDataAdapter(comando);
+                dataAdapter.Fill(datat);
+                dgv.DataSource = datat;
+            }
+            catch (MySqlException ex)
+            {
+                throw ex;
+            }
+
+
+
+
+        }
 
 
     }

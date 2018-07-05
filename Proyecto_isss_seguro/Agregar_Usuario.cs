@@ -7,11 +7,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using MySql.Data.MySqlClient;
 namespace Proyecto_isss_seguro
 {
     public partial class Agregar_Usuario : Form
     {
+        Clases.Conexion con = new Clases.Conexion();
         public Agregar_Usuario()
         {
             InitializeComponent();
@@ -44,7 +45,23 @@ namespace Proyecto_isss_seguro
 
         private void button1_Click(object sender, EventArgs e)
         {
+            try {
+                if (con.conectar()) {
+                    Clases.User.insertarUsuario(con.conexion,textBox1.Text,textBox2.Text,textBox3.Text,textBox4.Text,CmbCargo2.Text);
+                    MessageBox.Show("Usuario registrado exitosamente");
+                }
+            
 
+            } catch(MySqlException ex) {
+                MessageBox.Show("error es probable que el usuario ya esté registrado");
+            }
+
+            textBox1.Text = "";
+            textBox2.Text = "";
+            textBox3.Text = "";
+            textBox4.Text = "";
+            CmbCargo2.Text = "";
+            con.desconectar();
         }
 
         private void CmbCargo2_SelectedIndexChanged(object sender, EventArgs e)

@@ -30,11 +30,11 @@ namespace Proyecto_isss_seguro.Clases
         public Paciente() { }
 
         //constructor con parámetros para iniciar un nuevo usuario asignandole valores a sus atributos
-        public Paciente(int id, String noaf, String nomb, String apell, String dir, String gpoSanguineo, String factor, String genero, String vih, int edad, String tel)
+        public Paciente( String noaf, String nomb, String apell, String dir, String gpoSanguineo, String factor, String genero, String vih, int edad, String tel)
 
         {
 
-            this.idPaciente = id;
+       
             this.noafiliacion = noaf;
             this.nombre = nomb;
             this.apellido = apell;
@@ -66,6 +66,24 @@ namespace Proyecto_isss_seguro.Clases
            
 
          
+        }
+
+
+
+        public static void insertarPaciente(MySqlConnection conexion, Paciente paciente)
+        {
+             String query= "INSERT INTO paciente(IDPACIENTE, NOAFILIACION, NOMBRE, APELLIDO, DIRECCION, GRUPOSANGUINEO, FACTORRH, GENERO, VIH, EDAD, TELEFONOPACIENTE) VALUES('','"+paciente.noafiliacion+ "','" + paciente.nombre + "','" + paciente.apellido + "','" + paciente.direccion + "','" + paciente.grupoSanguineo+ "','" + paciente.factorRH + "','" + paciente.genero + "','" + paciente.vih + "','" + paciente.edad + "', '" + paciente.telefono + "')";
+            try
+            {
+                MySqlCommand comando = new MySqlCommand(query, conexion);
+                Int32 lector = (Int32)comando.ExecuteNonQuery();
+
+            }
+            catch (MySqlException ex)
+            { throw ex; }
+
+
+
         }
     }
 

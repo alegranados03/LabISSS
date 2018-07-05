@@ -59,6 +59,7 @@
       <DependentUpon>Agregar_Usuario.cs</DependentUpon>
     </Compile>
     <Compile Include="Clases\Conexion.cs" />
+    <Compile Include="Clases\Establecimiento.cs" />
     <Compile Include="Clases\Paciente.cs" />
     <Compile Include="Clases\User.cs" />
     <Compile Include="Establecimientos_ISSS.cs">
@@ -215,6 +216,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Ver_Paciente.resx">
       <DependentUpon>Ver_Paciente.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Ver_Prueba.resx">
       <DependentUpon>Ver_Prueba.cs</DependentUpon>

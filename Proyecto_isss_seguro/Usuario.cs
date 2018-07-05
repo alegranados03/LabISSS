@@ -32,14 +32,14 @@ namespace Proyecto_isss_seguro
                         con.desconectar();
                         con.conectar();
                         String tipoUser = obtenerTipoUsuario(con.conexion, txtU.Text, txtP.Text);
-                       if( tipoUser== "Admin")
+                       if( tipoUser== "ADMIN")
                         {
                             this.Hide();
                             Menu_Manager vnt1 = new Menu_Manager();
                             vnt1.Show();
 
                         }
-                        else if (tipoUser == "Local") {
+                        else if (tipoUser == "LOCAL") {
                          
                         } else {
                           
