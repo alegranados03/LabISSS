@@ -7,7 +7,6 @@ C:\Users\Ricardo Granados\Desktop\proyectoisss\Proyecto_isss_seguro\obj\Debug\Pr
 C:\Users\Ricardo Granados\Desktop\proyectoisss\Proyecto_isss_seguro\obj\Debug\Proyecto_isss_seguro.Menu_Paciente.resources
 C:\Users\Ricardo Granados\Desktop\proyectoisss\Proyecto_isss_seguro\obj\Debug\Proyecto_isss_seguro.Usuario.resources
 C:\Users\Ricardo Granados\Desktop\proyectoisss\Proyecto_isss_seguro\obj\Debug\Proyecto_isss_seguro.Properties.Resources.resources
-C:\Users\Ricardo Granados\Desktop\proyectoisss\Proyecto_isss_seguro\obj\Debug\Proyecto_isss_seguro.Ver_Establecimiento.resources
 C:\Users\Ricardo Granados\Desktop\proyectoisss\Proyecto_isss_seguro\obj\Debug\Proyecto_isss_seguro.Ver_Paciente.resources
 C:\Users\Ricardo Granados\Desktop\proyectoisss\Proyecto_isss_seguro\obj\Debug\Proyecto_isss_seguro.Ver_Usuario.resources
 C:\Users\Ricardo Granados\Desktop\proyectoisss\Proyecto_isss_seguro\obj\Debug\Proyecto_isss_seguro.csproj.GenerateResource.Cache
@@ -45,3 +44,11 @@ C:\Users\Cesar Flores\Documents\GitHub\LabISSS\Proyecto_isss_seguro\obj\Debug\Pr
 C:\Users\Cesar Flores\Documents\GitHub\LabISSS\Proyecto_isss_seguro\obj\Debug\Proyecto_isss_seguro.csproj.CoreCompileInputs.cache
 C:\Users\Cesar Flores\Documents\GitHub\LabISSS\Proyecto_isss_seguro\obj\Debug\Proyecto_isss_seguro.exe
 C:\Users\Cesar Flores\Documents\GitHub\LabISSS\Proyecto_isss_seguro\obj\Debug\Proyecto_isss_seguro.pdb
+C:\Users\Ricardo Granados\Desktop\proyectoisss\Proyecto_isss_seguro\obj\Debug\Proyecto_isss_seguro.Establecimientos_ISSS.resources
+C:\Users\Ricardo Granados\Desktop\proyectoisss\Proyecto_isss_seguro\obj\Debug\Proyecto_isss_seguro.Ingresar_Muestra.resources
+C:\Users\Ricardo Granados\Desktop\proyectoisss\Proyecto_isss_seguro\obj\Debug\Proyecto_isss_seguro.Ingresar_Prueba.resources
+C:\Users\Ricardo Granados\Desktop\proyectoisss\Proyecto_isss_seguro\obj\Debug\Proyecto_isss_seguro.Menu_Muestra.resources
+C:\Users\Ricardo Granados\Desktop\proyectoisss\Proyecto_isss_seguro\obj\Debug\Proyecto_isss_seguro.Menu_Prueba.resources
+C:\Users\Ricardo Granados\Desktop\proyectoisss\Proyecto_isss_seguro\obj\Debug\Proyecto_isss_seguro.Establecimientos_MINSAL.resources
+C:\Users\Ricardo Granados\Desktop\proyectoisss\Proyecto_isss_seguro\obj\Debug\Proyecto_isss_seguro.Ver_Muestra.resources
+C:\Users\Ricardo Granados\Desktop\proyectoisss\Proyecto_isss_seguro\obj\Debug\Proyecto_isss_seguro.Ver_Prueba.resources

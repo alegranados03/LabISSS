@@ -58,6 +58,9 @@
     <Compile Include="Agregar_Usuario.Designer.cs">
       <DependentUpon>Agregar_Usuario.cs</DependentUpon>
     </Compile>
+    <Compile Include="Clases\Conexion.cs" />
+    <Compile Include="Clases\Paciente.cs" />
+    <Compile Include="Clases\User.cs" />
     <Compile Include="Establecimientos_ISSS.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -232,5 +235,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
