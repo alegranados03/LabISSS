@@ -22,7 +22,8 @@ namespace Proyecto_isss_seguro
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Clases.Establecimiento pac = new Clases.Establecimiento();
+            //ordenar bien el siguiente constructor para que los parámetros entren como corresponden
+            Clases.Establecimiento pac = new Clases.Establecimiento(Convert.ToInt32(comboBox1.Text), Convert.ToInt32(comboBox2.Text), textBox5.Text,textBox3.Text, textBox4.Text, textBox5.Text);
             try
             {
                 if (con.conectar())
@@ -41,6 +42,11 @@ namespace Proyecto_isss_seguro
 
 
             con.desconectar();
+        }
+
+        private void Agregar_Establecimiento_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

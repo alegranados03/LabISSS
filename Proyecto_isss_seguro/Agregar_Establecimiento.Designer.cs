@@ -162,6 +162,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Agregar_Establecimiento";
             this.Text = "Agregar Establecimiento";
+            this.Load += new System.EventHandler(this.Agregar_Establecimiento_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
