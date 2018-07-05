@@ -32,7 +32,9 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button3 = new System.Windows.Forms.Button();
             this.IdUsuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.N_Afiliacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Apellido = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Dirección = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -42,7 +44,6 @@
             this.VIH = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Edad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Telefono = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -60,6 +61,7 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.IdUsuario,
+            this.N_Afiliacion,
             this.Nombre,
             this.Apellido,
             this.Dirección,
@@ -90,10 +92,24 @@
             this.textBox1.Size = new System.Drawing.Size(441, 20);
             this.textBox1.TabIndex = 14;
             // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(599, 389);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(114, 33);
+            this.button3.TabIndex = 19;
+            this.button3.Text = "Cancelar";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
             // IdUsuario
             // 
             this.IdUsuario.HeaderText = "IdUsuario";
             this.IdUsuario.Name = "IdUsuario";
+            // 
+            // N_Afiliacion
+            // 
+            this.N_Afiliacion.HeaderText = "Nº de Afiliacion";
+            this.N_Afiliacion.Name = "N_Afiliacion";
             // 
             // Nombre
             // 
@@ -140,15 +156,6 @@
             this.Telefono.HeaderText = "Telefono";
             this.Telefono.Name = "Telefono";
             // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(599, 389);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(114, 33);
-            this.button3.TabIndex = 19;
-            this.button3.Text = "Cancelar";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
             // Ver_Paciente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -173,7 +180,9 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.DataGridViewTextBoxColumn IdUsuario;
+        private System.Windows.Forms.DataGridViewTextBoxColumn N_Afiliacion;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn Apellido;
         private System.Windows.Forms.DataGridViewTextBoxColumn Dirección;
@@ -183,6 +192,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn VIH;
         private System.Windows.Forms.DataGridViewTextBoxColumn Edad;
         private System.Windows.Forms.DataGridViewTextBoxColumn Telefono;
-        private System.Windows.Forms.Button button3;
     }
 }

@@ -33,6 +33,7 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.IdMuestra = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.N_Afiliacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Paciente = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -65,6 +66,7 @@
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.IdMuestra,
             this.N_Afiliacion,
             this.Paciente,
             this.Fecha,
@@ -92,6 +94,11 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(441, 20);
             this.textBox1.TabIndex = 30;
+            // 
+            // IdMuestra
+            // 
+            this.IdMuestra.HeaderText = "IdMuestra";
+            this.IdMuestra.Name = "IdMuestra";
             // 
             // N_Afiliacion
             // 
@@ -152,6 +159,9 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn IdMuestra;
         private System.Windows.Forms.DataGridViewTextBoxColumn N_Afiliacion;
         private System.Windows.Forms.DataGridViewTextBoxColumn Paciente;
         private System.Windows.Forms.DataGridViewTextBoxColumn Fecha;
@@ -159,7 +169,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Establecimiento_Cultivo;
         private System.Windows.Forms.DataGridViewTextBoxColumn Tipo_Muestra;
         private System.Windows.Forms.DataGridViewTextBoxColumn Observacion;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
     }
 }
