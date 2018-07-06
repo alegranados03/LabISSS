@@ -72,7 +72,7 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Name = "Menu_Paciente";
-            this.Text = "Paciente";
+            this.Text = "Menu Paciente";
             this.ResumeLayout(false);
 
         }

@@ -58,6 +58,18 @@
     <Compile Include="Agregar_Usuario.Designer.cs">
       <DependentUpon>Agregar_Usuario.cs</DependentUpon>
     </Compile>
+    <Compile Include="CC_BK_General.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CC_BK_General.Designer.cs">
+      <DependentUpon>CC_BK_General.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CC_BK_Muestras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CC_BK_Muestras.Designer.cs">
+      <DependentUpon>CC_BK_Muestras.cs</DependentUpon>
+    </Compile>
     <Compile Include="Clases\Conexion.cs" />
     <Compile Include="Clases\Establecimiento.cs" />
     <Compile Include="Clases\Paciente.cs" />
@@ -79,6 +91,42 @@
     </Compile>
     <Compile Include="Ingresar_Prueba.Designer.cs">
       <DependentUpon>Ingresar_Prueba.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ingresar_Prueba_ADA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ingresar_Prueba_ADA.Designer.cs">
+      <DependentUpon>Ingresar_Prueba_ADA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ingresar_Prueba_BK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ingresar_Prueba_BK.Designer.cs">
+      <DependentUpon>Ingresar_Prueba_BK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ingresar_Prueba_Registrada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ingresar_Prueba_Registrada.Designer.cs">
+      <DependentUpon>Ingresar_Prueba_Registrada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu_Consolidados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu_Consolidados.Designer.cs">
+      <DependentUpon>Menu_Consolidados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ingreso_Prueba_Baar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ingreso_Prueba_Baar.Designer.cs">
+      <DependentUpon>Ingreso_Prueba_Baar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ingreso_Prueba_GX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ingreso_Prueba_GX.Designer.cs">
+      <DependentUpon>Ingreso_Prueba_GX.cs</DependentUpon>
     </Compile>
     <Compile Include="Menu_Establecimiento.cs">
       <SubType>Form</SubType>
@@ -121,6 +169,12 @@
     </Compile>
     <Compile Include="Menu_Paciente.Designer.cs">
       <DependentUpon>Menu_Paciente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Registrar_Prueba.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registrar_Prueba.Designer.cs">
+      <DependentUpon>Registrar_Prueba.cs</DependentUpon>
     </Compile>
     <Compile Include="Usuario.cs">
       <SubType>Form</SubType>
@@ -166,6 +220,12 @@
     <EmbeddedResource Include="Agregar_Usuario.resx">
       <DependentUpon>Agregar_Usuario.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CC_BK_General.resx">
+      <DependentUpon>CC_BK_General.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CC_BK_Muestras.resx">
+      <DependentUpon>CC_BK_Muestras.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Establecimientos_ISSS.resx">
       <DependentUpon>Establecimientos_ISSS.cs</DependentUpon>
     </EmbeddedResource>
@@ -177,6 +237,24 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Ingresar_Prueba.resx">
       <DependentUpon>Ingresar_Prueba.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ingresar_Prueba_ADA.resx">
+      <DependentUpon>Ingresar_Prueba_ADA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ingresar_Prueba_BK.resx">
+      <DependentUpon>Ingresar_Prueba_BK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ingresar_Prueba_Registrada.resx">
+      <DependentUpon>Ingresar_Prueba_Registrada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu_Consolidados.resx">
+      <DependentUpon>Menu_Consolidados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ingreso_Prueba_Baar.resx">
+      <DependentUpon>Ingreso_Prueba_Baar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ingreso_Prueba_GX.resx">
+      <DependentUpon>Ingreso_Prueba_GX.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menu_Establecimiento.resx">
       <DependentUpon>Menu_Establecimiento.cs</DependentUpon>
@@ -195,6 +273,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Menu_Paciente.resx">
       <DependentUpon>Menu_Paciente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registrar_Prueba.resx">
+      <DependentUpon>Registrar_Prueba.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Usuario.resx">
       <DependentUpon>Usuario.cs</DependentUpon>

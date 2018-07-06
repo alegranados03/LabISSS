@@ -107,6 +107,7 @@
             this.buttoncancelar.TabIndex = 42;
             this.buttoncancelar.Text = "Regresar";
             this.buttoncancelar.UseVisualStyleBackColor = true;
+            this.buttoncancelar.Click += new System.EventHandler(this.buttoncancelar_Click);
             // 
             // textBoxtelefono
             // 
@@ -275,7 +276,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Ingresar_Paciente";
-            this.Text = "Ingresar_Paciente";
+            this.Text = "Ingresar Paciente";
             this.Load += new System.EventHandler(this.Ingresar_Paciente_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

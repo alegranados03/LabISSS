@@ -73,7 +73,7 @@
             this.Controls.Add(this.button1);
             this.Name = "Menu_Usuario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Menu_Usuario";
+            this.Text = "Menu Usuario";
             this.Load += new System.EventHandler(this.Menu_Usuario_Load);
             this.ResumeLayout(false);
 

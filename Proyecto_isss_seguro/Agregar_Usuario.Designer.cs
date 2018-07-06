@@ -176,7 +176,7 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Name = "Agregar_Usuario";
-            this.Text = "Agregar_Usuario";
+            this.Text = "Agregar Usuario";
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -84,7 +84,7 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Name = "Menu_Establecimiento";
-            this.Text = "Establecimiento";
+            this.Text = "Menu Establecimiento";
             this.ResumeLayout(false);
 
         }

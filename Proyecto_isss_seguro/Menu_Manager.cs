@@ -57,5 +57,12 @@ namespace Proyecto_isss_seguro
             Menu_Establecimiento vnt3 = new Menu_Establecimiento();
             vnt3.Show();
         }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Menu_Consolidados vnt4 = new Menu_Consolidados ();
+            vnt4.Show();
+        }
     }
 }

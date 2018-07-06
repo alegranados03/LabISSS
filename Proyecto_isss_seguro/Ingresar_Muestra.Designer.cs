@@ -40,9 +40,11 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // comboBoxgruposanguineo
@@ -56,12 +58,12 @@
             "**"});
             this.comboBoxgruposanguineo.Location = new System.Drawing.Point(199, 101);
             this.comboBoxgruposanguineo.Name = "comboBoxgruposanguineo";
-            this.comboBoxgruposanguineo.Size = new System.Drawing.Size(263, 21);
+            this.comboBoxgruposanguineo.Size = new System.Drawing.Size(202, 21);
             this.comboBoxgruposanguineo.TabIndex = 66;
             // 
             // buttonguardar
             // 
-            this.buttonguardar.Location = new System.Drawing.Point(121, 189);
+            this.buttonguardar.Location = new System.Drawing.Point(56, 209);
             this.buttonguardar.Name = "buttonguardar";
             this.buttonguardar.Size = new System.Drawing.Size(143, 37);
             this.buttonguardar.TabIndex = 65;
@@ -70,39 +72,40 @@
             // 
             // buttoncancelar
             // 
-            this.buttoncancelar.Location = new System.Drawing.Point(295, 189);
+            this.buttoncancelar.Location = new System.Drawing.Point(230, 209);
             this.buttoncancelar.Name = "buttoncancelar";
             this.buttoncancelar.Size = new System.Drawing.Size(143, 37);
             this.buttoncancelar.TabIndex = 64;
             this.buttoncancelar.Text = "Regresar";
             this.buttoncancelar.UseVisualStyleBackColor = true;
+            this.buttoncancelar.Click += new System.EventHandler(this.buttoncancelar_Click);
             // 
             // textBoxdireccion
             // 
             this.textBoxdireccion.Location = new System.Drawing.Point(199, 132);
             this.textBoxdireccion.Name = "textBoxdireccion";
-            this.textBoxdireccion.Size = new System.Drawing.Size(263, 20);
+            this.textBoxdireccion.Size = new System.Drawing.Size(202, 20);
             this.textBoxdireccion.TabIndex = 60;
             // 
             // textBoxapellidos
             // 
             this.textBoxapellidos.Location = new System.Drawing.Point(199, 73);
             this.textBoxapellidos.Name = "textBoxapellidos";
-            this.textBoxapellidos.Size = new System.Drawing.Size(263, 20);
+            this.textBoxapellidos.Size = new System.Drawing.Size(202, 20);
             this.textBoxapellidos.TabIndex = 59;
             // 
             // textBoxnombres
             // 
             this.textBoxnombres.Location = new System.Drawing.Point(199, 47);
             this.textBoxnombres.Name = "textBoxnombres";
-            this.textBoxnombres.Size = new System.Drawing.Size(263, 20);
+            this.textBoxnombres.Size = new System.Drawing.Size(202, 20);
             this.textBoxnombres.TabIndex = 58;
             // 
             // textBoxafiliacion
             // 
             this.textBoxafiliacion.Location = new System.Drawing.Point(199, 19);
             this.textBoxafiliacion.Name = "textBoxafiliacion";
-            this.textBoxafiliacion.Size = new System.Drawing.Size(263, 20);
+            this.textBoxafiliacion.Size = new System.Drawing.Size(202, 20);
             this.textBoxafiliacion.TabIndex = 57;
             this.textBoxafiliacion.TextChanged += new System.EventHandler(this.textBoxafiliacion_TextChanged);
             // 
@@ -152,42 +155,59 @@
             this.label1.TabIndex = 47;
             this.label1.Text = "Establecimiento de Referencia:";
             // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(417, 19);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(55, 23);
+            this.button3.TabIndex = 69;
+            this.button3.Text = "Buscar";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(30, 164);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(40, 13);
+            this.label6.TabIndex = 71;
+            this.label6.Text = "Fecha:";
+            // 
+            // dateTimePicker2
+            // 
+            this.dateTimePicker2.Location = new System.Drawing.Point(199, 158);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(202, 20);
+            this.dateTimePicker2.TabIndex = 84;
+            // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(480, 70);
+            this.button1.Location = new System.Drawing.Point(417, 45);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(43, 23);
-            this.button1.TabIndex = 67;
-            this.button1.Text = "button1";
+            this.button1.Size = new System.Drawing.Size(55, 23);
+            this.button1.TabIndex = 85;
+            this.button1.Text = "Buscar";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(480, 41);
+            this.button2.Location = new System.Drawing.Point(417, 71);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(43, 23);
-            this.button2.TabIndex = 68;
-            this.button2.Text = "button2";
+            this.button2.Size = new System.Drawing.Size(55, 23);
+            this.button2.TabIndex = 86;
+            this.button2.Text = "Buscar";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(480, 12);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(43, 23);
-            this.button3.TabIndex = 69;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // Form1
+            // Ingresar_Muestra
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(544, 282);
-            this.Controls.Add(this.button3);
+            this.ClientSize = new System.Drawing.Size(498, 262);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
+            this.Controls.Add(this.dateTimePicker2);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.comboBoxgruposanguineo);
             this.Controls.Add(this.buttonguardar);
             this.Controls.Add(this.buttoncancelar);
@@ -200,7 +220,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "Form1";
+            this.Name = "Ingresar_Muestra";
             this.Text = "Ingresar Muestra";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
@@ -221,8 +241,10 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.DateTimePicker dateTimePicker2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
     }
 }

@@ -19,7 +19,9 @@ namespace Proyecto_isss_seguro
 
         private void button5_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            Menu_Prueba vnt0 = new Menu_Prueba();
+            vnt0.Show();
         }
     }
 }

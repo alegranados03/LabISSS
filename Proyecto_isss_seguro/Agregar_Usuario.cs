@@ -21,7 +21,9 @@ namespace Proyecto_isss_seguro
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            Menu_Usuario vnt0 = new Menu_Usuario();
+            vnt0.Show();
         }
 
         private void label4_Click(object sender, EventArgs e)

@@ -50,5 +50,17 @@ namespace Proyecto_isss_seguro
         {
 
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Menu_Paciente vnt0 = new Menu_Paciente();
+            vnt0.Show();
+        }
     }
 }

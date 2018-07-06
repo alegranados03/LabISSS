@@ -49,5 +49,12 @@ namespace Proyecto_isss_seguro
             Clases.User.listarUsuarios(conect, dataGridView1);
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Menu_Muestra vnt0 = new Menu_Muestra();
+            vnt0.Show();
+        }
     }
 }

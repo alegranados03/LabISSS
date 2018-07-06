@@ -36,5 +36,12 @@ namespace Proyecto_isss_seguro
         {
 
         }
+
+        private void buttoncancelar_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Menu_Muestra vnt0 = new Menu_Muestra();
+            vnt0.Show();
+        }
     }
 }

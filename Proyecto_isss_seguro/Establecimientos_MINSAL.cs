@@ -44,5 +44,12 @@ namespace Proyecto_isss_seguro
             Clases.Establecimiento.listarEstablecimientosMINSAL(conect, dataGridView1);
 
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Menu_Establecimiento vnt0 = new Menu_Establecimiento();
+            vnt0.Show();
+        }
     }
 }

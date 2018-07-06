@@ -34,7 +34,7 @@ namespace Proyecto_isss_seguro
                         String tipoUser = obtenerTipoUsuario(con.conexion, txtU.Text, txtP.Text);
                        if( tipoUser== "ADMIN")
                         {
-                            this.Close();
+                            this.Hide();
                             Menu_Manager vnt1 = new Menu_Manager();
                             vnt1.Show();
 

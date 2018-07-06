@@ -110,7 +110,7 @@
             this.Controls.Add(this.BtnIniciar);
             this.Controls.Add(this.label2);
             this.Name = "Usuario";
-            this.Text = "Usuario";
+            this.Text = "Inicio de Sesion";
             this.Load += new System.EventHandler(this.Usuario_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
