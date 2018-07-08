@@ -106,3 +106,7 @@ C:\Users\Cesar Flores\Documents\GitHub\LabISSS\Proyecto_isss_seguro\obj\Debug\Pr
 C:\Users\Cesar Flores\Documents\GitHub\LabISSS\Proyecto_isss_seguro\obj\Debug\Proyecto_isss_seguro.Establecimientos_MINSAL.resources
 C:\Users\Cesar Flores\Documents\GitHub\LabISSS\Proyecto_isss_seguro\obj\Debug\Proyecto_isss_seguro.Ver_Muestra.resources
 C:\Users\Cesar Flores\Documents\GitHub\LabISSS\Proyecto_isss_seguro\obj\Debug\Proyecto_isss_seguro.Ver_Prueba.resources
+C:\Users\Cesar Flores\Documents\GitHub\LabISSS\Proyecto_isss_seguro\obj\Debug\Proyecto_isss_seguro.Ver_Prueba_ADA.resources
+C:\Users\Cesar Flores\Documents\GitHub\LabISSS\Proyecto_isss_seguro\obj\Debug\Proyecto_isss_seguro.Ver_Prueba_Baar.resources
+C:\Users\Cesar Flores\Documents\GitHub\LabISSS\Proyecto_isss_seguro\obj\Debug\Proyecto_isss_seguro.Ver_Prueba_BK.resources
+C:\Users\Cesar Flores\Documents\GitHub\LabISSS\Proyecto_isss_seguro\obj\Debug\Proyecto_isss_seguro.Ver_Prueba_GX.resources
