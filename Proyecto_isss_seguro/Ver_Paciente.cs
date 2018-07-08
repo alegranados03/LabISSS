@@ -62,5 +62,24 @@ namespace Proyecto_isss_seguro
             Menu_Paciente vnt0 = new Menu_Paciente();
             vnt0.Show();
         }
+
+        private void textBox1_KeyUp(object sender, KeyEventArgs e)
+        {
+            con.conectar();
+
+            MySqlCommand cmd = con.conexion.CreateCommand();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "select * from paciente where IDPACIENTE like ('" + textBox1.Text + "') or NOAFILIACION like('" + textBox1.Text + "') or NOMBRE like('" + textBox1.Text + "') or APELLIDO like('" + textBox1.Text + "') or DIRECCION like('" + textBox1.Text + "') or GRUPOSANGUINEO like('" + textBox1.Text + "') or FACTORRH like('" + textBox1.Text + "') or GENERO like('" + textBox1.Text + "') or VIH like('" + textBox1.Text + "') or EDAD like('" + textBox1.Text + "') or TELEFONOPACIENTE like('" + textBox1.Text + "')";
+            cmd.ExecuteNonQuery();
+
+            DataTable dt = new DataTable();
+            MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+
+            da.Fill(dt);
+
+            dataGridView1.DataSource = dt;
+
+            con.desconectar();
+        }
     }
 }

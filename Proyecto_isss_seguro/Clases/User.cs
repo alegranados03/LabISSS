@@ -87,7 +87,7 @@ namespace Proyecto_isss_seguro.Clases
 
         public static void insertarUsuario(MySqlConnection conexion, User us) {
             
-            String query = "insert into usuario (IDUSUARIO,NOMBRES,APELLIDOS,USUARIO,CONTRASEÑA,TIPOUSUARIO) VALUES ('','" + us.nombres + "','" + us.apellidos + "','" + us.usuario + "','" + us.contrasena+"','"+us.tipoUsuario+"')";
+            String query = "insert into usuario (NOMBRES,APELLIDOS,USUARIO,CONTRASEÑA,TIPOUSUARIO) VALUES ('" + us.nombres + "','" + us.apellidos + "','" + us.usuario + "','" + us.contrasena+"','"+us.tipoUsuario+"')";
             try
             {
                 MySqlCommand comando = new MySqlCommand(query, conexion);

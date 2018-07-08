@@ -86,7 +86,7 @@ namespace Proyecto_isss_seguro.Clases
 
         public static void insertarPaciente(MySqlConnection conexion, Paciente paciente)
         {
-             String query= "INSERT INTO paciente(IDPACIENTE, NOAFILIACION, NOMBRE, APELLIDO, DIRECCION, GRUPOSANGUINEO, FACTORRH, GENERO, VIH, EDAD, TELEFONOPACIENTE) VALUES('','"+paciente.noafiliacion+ "','" + paciente.nombre + "','" + paciente.apellido + "','" + paciente.direccion + "','" + paciente.grupoSanguineo+ "','" + paciente.factorRH + "','" + paciente.genero + "','" + paciente.vih + "','" + paciente.edad + "', '" + paciente.telefono + "')";
+             String query= "INSERT INTO paciente(NOAFILIACION, NOMBRE, APELLIDO, DIRECCION, GRUPOSANGUINEO, FACTORRH, GENERO, VIH, EDAD, TELEFONOPACIENTE) VALUES('"+paciente.noafiliacion+ "','" + paciente.nombre + "','" + paciente.apellido + "','" + paciente.direccion + "','" + paciente.grupoSanguineo+ "','" + paciente.factorRH + "','" + paciente.genero + "','" + paciente.vih + "','" + paciente.edad + "', '" + paciente.telefono + "')";
             try
             {
                 MySqlCommand comando = new MySqlCommand(query, conexion);

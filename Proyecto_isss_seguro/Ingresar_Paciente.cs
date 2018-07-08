@@ -29,25 +29,22 @@ namespace Proyecto_isss_seguro
                 {
                     Clases.Paciente.insertarPaciente(con.conexion,pac);
                     MessageBox.Show("Paciente registrado exitosamente");
+                    textBoxafiliacion.Text = "";
+                    textBoxnombres.Text = "";
+                    textBoxapellidos.Text = "";
+                    textBoxdireccion.Text = "";
+                    comboBoxgruposanguineo.Text = "";
+                    comboBoxfactorrh.Text = "";
+                    comboBoxgenero.Text = "";
+                    textBoxvih.Text = "";
+                    textBoxedad.Text = "";
+                    textBoxtelefono.Text = "";
                 }
-
-
             }
             catch (MySqlException ex)
             {
                 MessageBox.Show("error es probable que el número de afiliación ya esté registrado");
             }
-
-            textBoxafiliacion.Text = "";
-            textBoxnombres.Text = "";
-            textBoxapellidos.Text = "";
-            textBoxdireccion.Text = "";
-            comboBoxgruposanguineo.Text = "";
-            comboBoxfactorrh.Text = "";
-            comboBoxgenero.Text = "";
-            textBoxvih.Text = "";
-            textBoxedad.Text = "";
-            textBoxtelefono.Text = "";
 
             con.desconectar();
         }

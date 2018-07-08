@@ -28,7 +28,6 @@ C:\Users\Cesar Flores\Documents\GitHub\LabISSS\Proyecto_isss_seguro\bin\Debug\My
 C:\Users\Cesar Flores\Documents\GitHub\LabISSS\Proyecto_isss_seguro\obj\Debug\Proyecto_isss_seguro.csprojResolveAssemblyReference.cache
 C:\Users\Cesar Flores\Documents\GitHub\LabISSS\Proyecto_isss_seguro\obj\Debug\Proyecto_isss_seguro.Agregar_Establecimiento.resources
 C:\Users\Cesar Flores\Documents\GitHub\LabISSS\Proyecto_isss_seguro\obj\Debug\Proyecto_isss_seguro.Agregar_Usuario.resources
-C:\Users\Cesar Flores\Documents\GitHub\LabISSS\Proyecto_isss_seguro\obj\Debug\Proyecto_isss_seguro.Form1.resources
 C:\Users\Cesar Flores\Documents\GitHub\LabISSS\Proyecto_isss_seguro\obj\Debug\Proyecto_isss_seguro.Ingresar_Paciente.resources
 C:\Users\Cesar Flores\Documents\GitHub\LabISSS\Proyecto_isss_seguro\obj\Debug\Proyecto_isss_seguro.Menu_Establecimiento.resources
 C:\Users\Cesar Flores\Documents\GitHub\LabISSS\Proyecto_isss_seguro\obj\Debug\Proyecto_isss_seguro.Menu_Manager.resources
@@ -37,7 +36,6 @@ C:\Users\Cesar Flores\Documents\GitHub\LabISSS\Proyecto_isss_seguro\obj\Debug\Pr
 C:\Users\Cesar Flores\Documents\GitHub\LabISSS\Proyecto_isss_seguro\obj\Debug\Proyecto_isss_seguro.Menu_Paciente.resources
 C:\Users\Cesar Flores\Documents\GitHub\LabISSS\Proyecto_isss_seguro\obj\Debug\Proyecto_isss_seguro.Usuario.resources
 C:\Users\Cesar Flores\Documents\GitHub\LabISSS\Proyecto_isss_seguro\obj\Debug\Proyecto_isss_seguro.Properties.Resources.resources
-C:\Users\Cesar Flores\Documents\GitHub\LabISSS\Proyecto_isss_seguro\obj\Debug\Proyecto_isss_seguro.Ver_Establecimiento.resources
 C:\Users\Cesar Flores\Documents\GitHub\LabISSS\Proyecto_isss_seguro\obj\Debug\Proyecto_isss_seguro.Ver_Paciente.resources
 C:\Users\Cesar Flores\Documents\GitHub\LabISSS\Proyecto_isss_seguro\obj\Debug\Proyecto_isss_seguro.Ver_Usuario.resources
 C:\Users\Cesar Flores\Documents\GitHub\LabISSS\Proyecto_isss_seguro\obj\Debug\Proyecto_isss_seguro.csproj.GenerateResource.Cache
@@ -92,3 +90,19 @@ C:\Users\usuario\Documents\GitHub\LabISSS\Proyecto_isss_seguro\obj\Debug\Proyect
 C:\Users\usuario\Documents\GitHub\LabISSS\Proyecto_isss_seguro\obj\Debug\Proyecto_isss_seguro.Menu_Consolidados.resources
 C:\Users\usuario\Documents\GitHub\LabISSS\Proyecto_isss_seguro\obj\Debug\Proyecto_isss_seguro.Ingreso_Prueba_Baar.resources
 C:\Users\usuario\Documents\GitHub\LabISSS\Proyecto_isss_seguro\obj\Debug\Proyecto_isss_seguro.Ingreso_Prueba_GX.resources
+C:\Users\Cesar Flores\Documents\GitHub\LabISSS\Proyecto_isss_seguro\obj\Debug\Proyecto_isss_seguro.CC_BK_General.resources
+C:\Users\Cesar Flores\Documents\GitHub\LabISSS\Proyecto_isss_seguro\obj\Debug\Proyecto_isss_seguro.CC_BK_Muestras.resources
+C:\Users\Cesar Flores\Documents\GitHub\LabISSS\Proyecto_isss_seguro\obj\Debug\Proyecto_isss_seguro.Establecimientos_ISSS.resources
+C:\Users\Cesar Flores\Documents\GitHub\LabISSS\Proyecto_isss_seguro\obj\Debug\Proyecto_isss_seguro.Ingresar_Muestra.resources
+C:\Users\Cesar Flores\Documents\GitHub\LabISSS\Proyecto_isss_seguro\obj\Debug\Proyecto_isss_seguro.Ingresar_Prueba.resources
+C:\Users\Cesar Flores\Documents\GitHub\LabISSS\Proyecto_isss_seguro\obj\Debug\Proyecto_isss_seguro.Ingresar_Prueba_ADA.resources
+C:\Users\Cesar Flores\Documents\GitHub\LabISSS\Proyecto_isss_seguro\obj\Debug\Proyecto_isss_seguro.Ingresar_Prueba_BK.resources
+C:\Users\Cesar Flores\Documents\GitHub\LabISSS\Proyecto_isss_seguro\obj\Debug\Proyecto_isss_seguro.Ingresar_Prueba_Registrada.resources
+C:\Users\Cesar Flores\Documents\GitHub\LabISSS\Proyecto_isss_seguro\obj\Debug\Proyecto_isss_seguro.Menu_Consolidados.resources
+C:\Users\Cesar Flores\Documents\GitHub\LabISSS\Proyecto_isss_seguro\obj\Debug\Proyecto_isss_seguro.Ingreso_Prueba_Baar.resources
+C:\Users\Cesar Flores\Documents\GitHub\LabISSS\Proyecto_isss_seguro\obj\Debug\Proyecto_isss_seguro.Ingreso_Prueba_GX.resources
+C:\Users\Cesar Flores\Documents\GitHub\LabISSS\Proyecto_isss_seguro\obj\Debug\Proyecto_isss_seguro.Menu_Prueba.resources
+C:\Users\Cesar Flores\Documents\GitHub\LabISSS\Proyecto_isss_seguro\obj\Debug\Proyecto_isss_seguro.Registrar_Prueba.resources
+C:\Users\Cesar Flores\Documents\GitHub\LabISSS\Proyecto_isss_seguro\obj\Debug\Proyecto_isss_seguro.Establecimientos_MINSAL.resources
+C:\Users\Cesar Flores\Documents\GitHub\LabISSS\Proyecto_isss_seguro\obj\Debug\Proyecto_isss_seguro.Ver_Muestra.resources
+C:\Users\Cesar Flores\Documents\GitHub\LabISSS\Proyecto_isss_seguro\obj\Debug\Proyecto_isss_seguro.Ver_Prueba.resources
