@@ -18,6 +18,10 @@ namespace Proyecto_isss_seguro
         public Ingresar_Paciente()
         {
             InitializeComponent();
+            comboBoxgruposanguineo.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBoxfactorrh.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBoxgenero.DropDownStyle = ComboBoxStyle.DropDownList;
+
         }
 
         private void buttonguardar_Click(object sender, EventArgs e)

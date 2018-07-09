@@ -77,7 +77,7 @@ namespace Proyecto_isss_seguro.Clases
 
         public static void insertarEstablecimiento(MySqlConnection conexion, Establecimiento est)
         {
- String query = "INSERT INTO establecimiento(IDESTABLECIMIENTO, IDENTIDAD, IDREGION, NOMBREESTABLECIMIENTO, TIPOESTABLECIMIENTO, DIRECCIONESTABLECIMIENTO, TELEFONOESTABLECIMIENTO) VALUES ('','"+ est.idEntidad + "','"+ est.idRegion + "','"+ est.nombreEstablecimiento + "','" + est.tipoEstablecimiento + "','"+ est.direccionEstablecimiento + "','" +est.telefonoEstablecimiento + "')";
+ String query = "INSERT INTO establecimiento(IDENTIDAD, IDREGION, NOMBREESTABLECIMIENTO, TIPOESTABLECIMIENTO, DIRECCIONESTABLECIMIENTO, TELEFONOESTABLECIMIENTO) VALUES ('"+ est.idEntidad + "','"+ est.idRegion + "','"+ est.nombreEstablecimiento + "','" + est.tipoEstablecimiento + "','"+ est.direccionEstablecimiento + "','" +est.telefonoEstablecimiento + "')";
             try
             {
                 MySqlCommand comando = new MySqlCommand(query, conexion);

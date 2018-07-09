@@ -17,6 +17,8 @@ namespace Proyecto_isss_seguro
         public Agregar_Usuario()
         {
             InitializeComponent();
+            CmbCargo2.DropDownStyle = ComboBoxStyle.DropDownList;
+
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -95,6 +97,11 @@ namespace Proyecto_isss_seguro
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Agregar_Usuario_Load(object sender, EventArgs e)
         {
 
         }

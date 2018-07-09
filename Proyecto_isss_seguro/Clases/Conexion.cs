@@ -15,7 +15,7 @@ namespace Proyecto_isss_seguro.Clases
         //constructor vacío para iniciar una nueva conexión
         public Conexion()
         {
-            conexion = new MySqlConnection("server=localhost; port=3306; database=isss2018; Uid=root; pwd=123456; SslMode=none");
+            conexion = new MySqlConnection("server=localhost; port=3306; database=isss2018; Uid=root; pwd=1234; SslMode=none");
         }
  
         //método para conectar a la base de datos, retorna true si la conexión es exitosa

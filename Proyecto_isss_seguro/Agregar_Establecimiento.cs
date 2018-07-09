@@ -18,12 +18,69 @@ namespace Proyecto_isss_seguro
         public Agregar_Establecimiento()
         {
             InitializeComponent();
+            comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBox2.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBox3.DropDownStyle = ComboBoxStyle.DropDownList;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
+
+            int IDREGION;
+            int IDENTIDAD;
+
+            if (comboBox1.Text == "Zona Central")
+            {
+                IDREGION = 1;
+            }
+
+            else if (comboBox1.Text == "Zona Paracentral")
+            {
+                IDREGION = 2;
+            }
+
+            else if (comboBox1.Text == "Zona Occidental")
+            {
+                IDREGION = 3;
+            }
+
+            else if (comboBox1.Text == "Zona Oriental")
+            {
+                IDREGION = 4;
+            }
+            else if (comboBox1.Text == "Zona Metropolitana")
+            {
+                IDREGION = 5;
+            }
+
+            else if (comboBox1.Text == "Zona M. Unidades")
+            {
+                IDREGION = 6;
+            }
+            else if (comboBox1.Text == "Zona M.Hospitales")
+            {
+                IDREGION = 7;
+            }
+
+            else
+            {
+                IDREGION = 8;
+            }
+
+
+            if (comboBox2.Text == "ISSS")
+            {
+                IDENTIDAD = 1;
+            }
+
+            else
+            {
+                IDENTIDAD = 2;
+            }
+
+
             //ordenar bien el siguiente constructor para que los parámetros entren como corresponden
-            Clases.Establecimiento pac = new Clases.Establecimiento(Convert.ToInt32(comboBox1.Text), Convert.ToInt32(comboBox2.Text), textBox5.Text,textBox3.Text, textBox4.Text, textBox5.Text);
+            Clases.Establecimiento pac = new Clases.Establecimiento(IDENTIDAD, IDREGION, textBox3.Text, comboBox3.Text, textBox4.Text, textBox5.Text);
             try
             {
                 if (con.conectar())
@@ -36,9 +93,15 @@ namespace Proyecto_isss_seguro
             }
             catch (MySqlException ex)
             {
-                MessageBox.Show("error");
+                MessageBox.Show("error"+ex);
             }
 
+
+            comboBox1.Text = " ";
+            comboBox2.Text = " ";
+            textBox3.Text = " ";
+            textBox4.Text = " ";
+            textBox5.Text = " ";
 
 
             con.desconectar();
@@ -74,6 +137,11 @@ namespace Proyecto_isss_seguro
             this.Hide();
             Menu_Establecimiento vnt0 = new Menu_Establecimiento();
             vnt0.Show();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

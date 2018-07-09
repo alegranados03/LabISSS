@@ -54,7 +54,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(30, 79);
+            this.label5.Location = new System.Drawing.Point(101, 82);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(47, 13);
             this.label5.TabIndex = 35;
@@ -83,7 +83,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(30, 53);
+            this.label2.Location = new System.Drawing.Point(102, 56);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(46, 13);
             this.label2.TabIndex = 29;
@@ -92,15 +92,25 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(33, 30);
+            this.label1.Location = new System.Drawing.Point(104, 30);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(44, 13);
             this.label1.TabIndex = 27;
             this.label1.Text = "Region:";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Zona Central",
+            "Zona Paracentral",
+            "Zona Occidental",
+            "Zona Oriental",
+            "Zona Metropolitana",
+            "Zona M. Unidades",
+            "Zona M. Hospitales",
+            "Otro"});
             this.comboBox1.Location = new System.Drawing.Point(163, 30);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(145, 21);
@@ -109,6 +119,9 @@
             // comboBox2
             // 
             this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "ISSS",
+            "MINSAL"});
             this.comboBox2.Location = new System.Drawing.Point(163, 56);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(145, 21);
@@ -130,7 +143,8 @@
             this.comboBox3.Items.AddRange(new object[] {
             "De Referencia",
             "De Cultivo",
-            "Ambos"});
+            "Ambos",
+            "Otros"});
             this.comboBox3.Location = new System.Drawing.Point(163, 108);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(145, 21);
@@ -147,7 +161,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(25, 135);
+            this.label4.Location = new System.Drawing.Point(93, 135);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(55, 13);
             this.label4.TabIndex = 46;
@@ -163,7 +177,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(25, 161);
+            this.label3.Location = new System.Drawing.Point(93, 161);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(52, 13);
             this.label3.TabIndex = 44;
