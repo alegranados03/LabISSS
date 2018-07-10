@@ -204,6 +204,12 @@
     <Compile Include="Ver\Establecimientos_MINSAL.Designer.cs">
       <DependentUpon>Establecimientos_MINSAL.cs</DependentUpon>
     </Compile>
+    <Compile Include="Ver\Expediente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ver\Expediente.Designer.cs">
+      <DependentUpon>Expediente.cs</DependentUpon>
+    </Compile>
     <Compile Include="Ver\Ver_Muestra.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -311,6 +317,9 @@
     </Compile>
     <EmbeddedResource Include="Ver\Establecimientos_MINSAL.resx">
       <DependentUpon>Establecimientos_MINSAL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ver\Expediente.resx">
+      <DependentUpon>Expediente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ver\Ver_Muestra.resx">
       <DependentUpon>Ver_Muestra.cs</DependentUpon>

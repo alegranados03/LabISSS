@@ -23,13 +23,7 @@ namespace Proyecto_isss_seguro
             Application.ExitThread();
         }
 
-        private void button5_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Menu_Prueba vnt0 = new Menu_Prueba();
-            vnt0.Show();
-        }
-
+       
         private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -44,12 +38,7 @@ namespace Proyecto_isss_seguro
             vnt1.Show();
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Menu_Muestra vnt2 = new Menu_Muestra();
-            vnt2.Show();
-        }
+        
 
         private void button4_Click(object sender, EventArgs e)
         {

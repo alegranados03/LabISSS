@@ -139,5 +139,29 @@ namespace Proyecto_isss_seguro
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (IdPaciente != null)
+            {
+                this.Hide();
+                Ver.Expediente vnt2 = new Ver.Expediente();
+                vnt2.label3.Text = IdPaciente;
+                vnt2.label11.Text = Nombres;
+                vnt2.label12.Text = Apellidos;
+                vnt2.label13.Text = GrupoSanguineo1;
+                vnt2.label14.Text = FactorRH1;
+                vnt2.label15.Text = VIH1;
+                vnt2.label16.Text = Genero1;
+                vnt2.label17.Text = Direccion1;
+                vnt2.label18.Text = Edad1;
+                vnt2.label19.Text = Telefono;
+                vnt2.label20.Text = Afiliacion;
+
+                vnt2.Show();
+            } else {
+                MessageBox.Show("Debe seleccionar un paciente");
+            }
+    }
     }
 }
