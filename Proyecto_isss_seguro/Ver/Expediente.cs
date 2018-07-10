@@ -52,5 +52,21 @@ namespace Proyecto_isss_seguro.Ver
             Clases.Muestra.listarMuestras(conect,label3.Text, dataGridView1);
 
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            
+            Ingresar_Muestra vnt2 = new Ingresar_Muestra();
+            vnt2.label7.Text = label3.Text; 
+
+            vnt2.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Ver.expedientemuestra vnt0 = new expedientemuestra();
+            vnt0.Show();
+        }
     }
 }

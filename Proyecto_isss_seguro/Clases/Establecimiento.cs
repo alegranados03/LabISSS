@@ -99,5 +99,25 @@ namespace Proyecto_isss_seguro.Clases
             catch (MySqlException ex)
             { throw ex; }
         }
+
+
+        public static List<Establecimiento>cargarestablecimientos(MySqlConnection conexion)
+        
+        {
+        
+ String query = "Select IDESTABLECIMIENTO, NOMBREESTABLECIMIENTO from establecimiento";
+                
+            List<Establecimiento> le = new List<Establecimiento>();
+            MySqlCommand comando = new MySqlCommand(query, conexion);
+            MySqlDataReader rd = comando.ExecuteReader();
+            while (rd.Read())
+            {
+                Establecimiento es = new Establecimiento();
+                es.idEstablecimiento = Convert.ToInt32(rd["IDESTABLECIMIENTO"].ToString());
+                es.nombreEstablecimiento = rd["NOMBREESTABLECIMIENTO"].ToString();
+                le.Add(es);
+            }
+            return le;
+        }
     }
 }

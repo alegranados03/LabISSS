@@ -210,6 +210,12 @@
     <Compile Include="Ver\Expediente.Designer.cs">
       <DependentUpon>Expediente.cs</DependentUpon>
     </Compile>
+    <Compile Include="Ver\expedientemuestra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ver\expedientemuestra.Designer.cs">
+      <DependentUpon>expedientemuestra.cs</DependentUpon>
+    </Compile>
     <Compile Include="Ver\Ver_Muestra.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -320,6 +326,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Ver\Expediente.resx">
       <DependentUpon>Expediente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ver\expedientemuestra.resx">
+      <DependentUpon>expedientemuestra.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ver\Ver_Muestra.resx">
       <DependentUpon>Ver_Muestra.cs</DependentUpon>
