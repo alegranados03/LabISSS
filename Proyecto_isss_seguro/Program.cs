@@ -17,7 +17,7 @@ namespace Proyecto_isss_seguro
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Usuario());
-           // Application.Run(new Menu_Manager());
+            //Application.Run(new Menu_Manager());
 
         }
     }

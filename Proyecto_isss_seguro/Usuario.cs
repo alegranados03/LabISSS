@@ -72,5 +72,60 @@ namespace Proyecto_isss_seguro
         {
             return Clases.User.obtenerTipoU(conexion, User, Pass); ;
         }
+
+        private void Usuario_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            
+        }
+
+        private void txtP_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == Convert.ToChar(Keys.Enter))
+            {
+                try
+                {
+                    if (con.conectar() == true)
+                    {
+                        if (validar(con.conexion, txtU.Text, txtP.Text))
+                        {
+                            con.desconectar();
+                            con.conectar();
+                            String tipoUser = obtenerTipoUsuario(con.conexion, txtU.Text, txtP.Text);
+                            if (tipoUser == "ADMIN")
+                            {
+                                this.Hide();
+                                Menu_Manager vnt1 = new Menu_Manager();
+                                vnt1.Show();
+
+                            }
+                            else if (tipoUser == "LOCAL")
+                            {
+
+                            }
+                            else
+                            {
+
+                            }
+                        }
+                        else
+                        {
+                            MessageBox.Show("error en inicio de sesión, usuario o contraseña incorrecto");
+                        }
+                    }
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("error en conexion" + ex);
+                }
+                con.desconectar();
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Close();
+            Application.ExitThread();
+        }
     }
 }

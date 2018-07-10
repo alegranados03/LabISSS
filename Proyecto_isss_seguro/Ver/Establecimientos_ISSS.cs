@@ -96,7 +96,7 @@ namespace Proyecto_isss_seguro
             this.Hide();
             Actualizar.Actualizar_Establecimiento_ISSS vnt1 = new Actualizar.Actualizar_Establecimiento_ISSS();
             vnt1.label7.Text = IdEstablecimiento;
-            vnt1.comboBox2.Text = IdEntidad;
+            vnt1.comboBox2.Text = cambiarEntidadString(IdEntidad);
             vnt1.comboBox1.Text = cambiarRegionString(IdRegion);
             vnt1.textBox3.Text = NombreEstablecimiento;
             vnt1.comboBox3.Text = TipoEstablecimiento;
@@ -139,6 +139,17 @@ namespace Proyecto_isss_seguro
             else
             {nomregion = "Otros";}
             return nomregion;
+        }
+
+        public static String cambiarEntidadString(String idEntidad)
+        {
+            String non = null;
+
+            if (idEntidad == "1")
+            {non = "ISSS";}
+            else
+            {non = "MINSAL";}
+            return non;
         }
     }
 }

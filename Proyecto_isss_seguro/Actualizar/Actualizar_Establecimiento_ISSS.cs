@@ -33,7 +33,59 @@ namespace Proyecto_isss_seguro.Actualizar
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Clases.Establecimiento pac = new Clases.Establecimiento(Convert.ToInt32(label7.Text), Convert.ToInt32(comboBox1.Text), Convert.ToInt32(comboBox2.Text), textBox3.Text, comboBox3.Text, textBox4.Text, textBox5.Text);
+            int IDREGION;
+            int IDENTIDAD;
+
+            if (comboBox1.Text == "Zona Central")
+            {
+                IDREGION = 1;
+            }
+
+            else if (comboBox1.Text == "Zona Paracentral")
+            {
+                IDREGION = 2;
+            }
+
+            else if (comboBox1.Text == "Zona Occidental")
+            {
+                IDREGION = 3;
+            }
+
+            else if (comboBox1.Text == "Zona Oriental")
+            {
+                IDREGION = 4;
+            }
+            else if (comboBox1.Text == "Zona Metropolitana")
+            {
+                IDREGION = 5;
+            }
+
+            else if (comboBox1.Text == "Zona M. Unidades")
+            {
+                IDREGION = 6;
+            }
+            else if (comboBox1.Text == "Zona M.Hospitales")
+            {
+                IDREGION = 7;
+            }
+
+            else
+            {
+                IDREGION = 8;
+            }
+
+
+            if (comboBox2.Text == "ISSS")
+            {
+                IDENTIDAD = 1;
+            }
+
+            else
+            {
+                IDENTIDAD = 2;
+            }
+
+            Clases.Establecimiento pac = new Clases.Establecimiento(Convert.ToInt32(label7.Text), IDENTIDAD, IDREGION, textBox3.Text, comboBox3.Text, textBox4.Text, textBox5.Text);
             try
             {
                 if (con.conectar())

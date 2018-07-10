@@ -53,6 +53,7 @@
             this.button2.TabIndex = 14;
             this.button2.Text = "Cerrar";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // txtP
             // 
@@ -61,6 +62,7 @@
             this.txtP.PasswordChar = '*';
             this.txtP.Size = new System.Drawing.Size(152, 20);
             this.txtP.TabIndex = 13;
+            this.txtP.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtP_KeyPress);
             // 
             // label1
             // 
@@ -112,6 +114,7 @@
             this.Name = "Usuario";
             this.Text = "Inicio de Sesion";
             this.Load += new System.EventHandler(this.Usuario_Load);
+            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Usuario_KeyPress);
             this.ResumeLayout(false);
             this.PerformLayout();
 

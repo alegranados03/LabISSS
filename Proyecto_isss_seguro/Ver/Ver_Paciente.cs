@@ -22,7 +22,7 @@ namespace Proyecto_isss_seguro
 
         }
 
-        public static String IdPaciente;
+        public static String IdPaciente = null;
         public static string Afiliacion;
         public static string Nombres;
         public static string Apellidos;
@@ -96,20 +96,28 @@ namespace Proyecto_isss_seguro
 
         private void button2_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Actualizar.Actualizar_Paciente vnt2 = new Actualizar.Actualizar_Paciente();
-            vnt2.label11.Text = IdPaciente;
-            vnt2.textBoxafiliacion.Text = Afiliacion;
-            vnt2.textBoxnombres.Text = Nombres;
-            vnt2.textBoxapellidos.Text = Apellidos;
-            vnt2.textBoxdireccion.Text = Direccion1;
-            vnt2.comboBoxgruposanguineo.Text = GrupoSanguineo1;
-            vnt2.comboBoxfactorrh.Text = FactorRH1;
-            vnt2.comboBoxgenero.Text = Genero1;
-            vnt2.textBoxvih.Text = VIH1;
-            vnt2.textBoxedad.Text = Edad1;
-            vnt2.textBoxtelefono.Text = Telefono;
-            vnt2.Show();
+            if (IdPaciente != null)
+            {
+                this.Hide();
+                Actualizar.Actualizar_Paciente vnt2 = new Actualizar.Actualizar_Paciente();
+                vnt2.label11.Text = IdPaciente;
+                vnt2.textBoxafiliacion.Text = Afiliacion;
+                vnt2.textBoxnombres.Text = Nombres;
+                vnt2.textBoxapellidos.Text = Apellidos;
+                vnt2.textBoxdireccion.Text = Direccion1;
+                vnt2.comboBoxgruposanguineo.Text = GrupoSanguineo1;
+                vnt2.comboBoxfactorrh.Text = FactorRH1;
+                vnt2.comboBoxgenero.Text = Genero1;
+                vnt2.textBoxvih.Text = VIH1;
+                vnt2.textBoxedad.Text = Edad1;
+                vnt2.textBoxtelefono.Text = Telefono;
+                vnt2.Show();
+            }
+            else
+            {
+                MessageBox.Show("Debe seleccionar un paciente");
+            }
+          
         }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
