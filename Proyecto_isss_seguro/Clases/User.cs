@@ -85,7 +85,8 @@ namespace Proyecto_isss_seguro.Clases
 
 
 
-        public static void insertarUsuario(MySqlConnection conexion, User us) {
+        public static void insertarUsuario(MySqlConnection conexion, User us)
+        {
             
             String query = "insert into usuario (NOMBRES,APELLIDOS,USUARIO,CONTRASEÑA,TIPOUSUARIO) VALUES ('" + us.nombres + "','" + us.apellidos + "','" + us.usuario + "','" + us.contrasena+"','"+us.tipoUsuario+"')";
             try
@@ -122,6 +123,30 @@ namespace Proyecto_isss_seguro.Clases
 
         }
 
+        public static void actualizarUsuario(MySqlConnection conexion, User us)
+        {
+            String query = "update usuario set NOMBRES = '" + us.nombres + "', APELLIDOS = '" + us.apellidos + "', USUARIO = '" + us.usuario + "', TIPOUSUARIO = '"+us.tipoUsuario+"' where idusuario = '" + us.idusuario + "'";
+            try
+            {
+                MySqlCommand comando = new MySqlCommand(query, conexion);
+                Int32 lector = (Int32)comando.ExecuteNonQuery();
+
+            }
+            catch (MySqlException ex)
+            { throw ex; }
+        }
+        public static void EliminarUsuario(MySqlConnection conexion, String us)
+        {
+            String query = "delete from usuario where idusuario = '"+ us +"'";
+            try
+            {
+                MySqlCommand comando = new MySqlCommand(query, conexion);
+                Int32 lector = (Int32)comando.ExecuteNonQuery();
+
+            }
+            catch (MySqlException ex)
+            { throw ex; }
+        }
 
     }
 
