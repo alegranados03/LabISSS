@@ -97,7 +97,7 @@ namespace Proyecto_isss_seguro
             Actualizar.Actualizar_Establecimiento_ISSS vnt1 = new Actualizar.Actualizar_Establecimiento_ISSS();
             vnt1.label7.Text = IdEstablecimiento;
             vnt1.comboBox2.Text = IdEntidad;
-            vnt1.comboBox1.Text = IdRegion;
+            vnt1.comboBox1.Text = cambiarRegionString(IdRegion);
             vnt1.textBox3.Text = NombreEstablecimiento;
             vnt1.comboBox3.Text = TipoEstablecimiento;
             vnt1.textBox4.Text = DireccionEstablecimiento;
@@ -113,6 +113,32 @@ namespace Proyecto_isss_seguro
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        public static String cambiarRegionString(String idRegion)
+        {
+            String nomregion=null;
+            if (idRegion == "1")
+            {nomregion = "Zona Central";}
+
+            else if (idRegion == "2")
+            {  nomregion = "Zona Paracentral";}
+
+            else if (idRegion == "3")
+            { nomregion = "Zona Occidental";}
+
+            else if (idRegion == "4")
+            {nomregion = "Zona Oriental";}
+            else if (idRegion == "5")
+            {nomregion = "Zona Metropolitana";}
+
+            else if (idRegion == "6")
+            {nomregion = "Zona M. Unidades";}
+            else if (idRegion == "7")
+            {nomregion = "Zona M.Hospitales";}
+            else
+            {nomregion = "Otros";}
+            return nomregion;
         }
     }
 }

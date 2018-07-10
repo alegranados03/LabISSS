@@ -23,14 +23,14 @@ namespace Proyecto_isss_seguro.Clases
         int edad { get; set; }
         String telefono { get; set; }
 
-       
+
 
 
         //constructor vacío para iniciar un nuevo usuario sin asignarle valores a sus atributos
         public Paciente() { }
 
         //constructor con parámetros para iniciar un nuevo usuario asignandole valores a sus atributos
-        public Paciente( int id,String noaf, String nomb, String apell, String dir, String gpoSanguineo, String factor, String genero, String vih, int edad, String tel)
+        public Paciente(int id, String noaf, String nomb, String apell, String dir, String gpoSanguineo, String factor, String genero, String vih, int edad, String tel)
 
         {
 
@@ -48,7 +48,7 @@ namespace Proyecto_isss_seguro.Clases
 
         }
         //constructor sin id
-        public Paciente( String noaf, String nomb, String apell, String dir, String gpoSanguineo, String factor, String genero, String vih, int edad, String tel)
+        public Paciente(String noaf, String nomb, String apell, String dir, String gpoSanguineo, String factor, String genero, String vih, int edad, String tel)
 
         {
 
@@ -67,15 +67,18 @@ namespace Proyecto_isss_seguro.Clases
 
 
 
-        public static void listarPacientes(MySqlConnection conexion,DataGridView dgv ) {
+        public static void listarPacientes(MySqlConnection conexion, DataGridView dgv)
+        {
             DataTable datat = new DataTable();
 
-            try {
+            try
+            {
                 MySqlCommand comando = new MySqlCommand(string.Format(("select * from paciente")), conexion);
                 MySqlDataAdapter dataAdapter = new MySqlDataAdapter(comando);
                 dataAdapter.Fill(datat);
                 dgv.DataSource = datat;
-            } catch(MySqlException ex)
+            }
+            catch (MySqlException ex)
             {
                 throw ex;
             }
@@ -86,7 +89,7 @@ namespace Proyecto_isss_seguro.Clases
 
         public static void insertarPaciente(MySqlConnection conexion, Paciente paciente)
         {
-             String query= "INSERT INTO paciente(NOAFILIACION, NOMBRE, APELLIDO, DIRECCION, GRUPOSANGUINEO, FACTORRH, GENERO, VIH, EDAD, TELEFONOPACIENTE) VALUES('"+paciente.noafiliacion+ "','" + paciente.nombre + "','" + paciente.apellido + "','" + paciente.direccion + "','" + paciente.grupoSanguineo+ "','" + paciente.factorRH + "','" + paciente.genero + "','" + paciente.vih + "','" + paciente.edad + "', '" + paciente.telefono + "')";
+            String query = "INSERT INTO paciente(NOAFILIACION, NOMBRE, APELLIDO, DIRECCION, GRUPOSANGUINEO, FACTORRH, GENERO, VIH, EDAD, TELEFONOPACIENTE) VALUES('" + paciente.noafiliacion + "','" + paciente.nombre + "','" + paciente.apellido + "','" + paciente.direccion + "','" + paciente.grupoSanguineo + "','" + paciente.factorRH + "','" + paciente.genero + "','" + paciente.vih + "','" + paciente.edad + "', '" + paciente.telefono + "')";
             try
             {
                 MySqlCommand comando = new MySqlCommand(query, conexion);
@@ -99,7 +102,7 @@ namespace Proyecto_isss_seguro.Clases
 
 
         }
-<<<<<<< HEAD
+
         public static void actualizarPaciente(MySqlConnection conexion, Paciente paciente)
         {
             String query = "UPDATE paciente set NOAFILIACION = '" + paciente.noafiliacion + "', NOMBRE = '" + paciente.nombre + "', APELLIDO = '" + paciente.apellido + "', DIRECCION = '" + paciente.direccion + "', GRUPOSANGUINEO = '" + paciente.grupoSanguineo + "', FACTORRH = '" + paciente.factorRH + "', GENERO = '" + paciente.genero + "', VIH = '" + paciente.vih + "', EDAD = '" + paciente.edad + "', TELEFONOPACIENTE = '" + paciente.telefono + "' where idpaciente = '" + paciente.idPaciente + "'";
@@ -107,30 +110,32 @@ namespace Proyecto_isss_seguro.Clases
             {
                 MySqlCommand comando = new MySqlCommand(query, conexion);
                 Int32 lector = (Int32)comando.ExecuteNonQuery();
-=======
 
+            }
+            catch (MySqlException ex)
+            { throw ex; }
+        }
 
 
         public static MySqlDataReader cargarPaciente(MySqlConnection conexion, String id)
         {
-            String query = "select * from paciente where idPaciente='"+id+"'";
+            String query = "select * from paciente where idPaciente='" + id + "'";
             try
             {
                 MySqlCommand comando = new MySqlCommand(query, conexion);
                 MySqlDataReader datos = null; comando.ExecuteReader();
 
                 return datos;
->>>>>>> 36567d1e3b384d95f97644027fd0ca921093b614
+
 
             }
             catch (MySqlException ex)
             { throw ex; }
-<<<<<<< HEAD
-=======
 
 
 
->>>>>>> 36567d1e3b384d95f97644027fd0ca921093b614
+
+
         }
     }
 

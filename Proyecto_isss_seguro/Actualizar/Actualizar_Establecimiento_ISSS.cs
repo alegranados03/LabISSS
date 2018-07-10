@@ -33,28 +33,33 @@ namespace Proyecto_isss_seguro.Actualizar
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //Clases.Establecimiento pac = new Clases.Establecimiento(Convert.ToInt32(label7.Text), Convert.ToInt32(comboBox1.Text), Convert.ToInt32(comboBox2.Text), textBox3.Text, comboBox3.Text, textBox4.Text, textBox5.Text);
-            //try
-            //{
-            //    if (con.conectar())
-            //    {
-            //        Clases.Establecimiento.actualizarEstablecimiento(con.conexion, pac);
-            //        MessageBox.Show("Establecimiento actualizado exitosamente");
-            //        comboBox1.Text = "";
-            //        comboBox2.Text = "";
-            //        textBox3.Text = "";
-            //        comboBox3.Text = "";
-            //        textBox4.Text = "";
-            //        textBox5.Text = "";
-            //    }
+            Clases.Establecimiento pac = new Clases.Establecimiento(Convert.ToInt32(label7.Text), Convert.ToInt32(comboBox1.Text), Convert.ToInt32(comboBox2.Text), textBox3.Text, comboBox3.Text, textBox4.Text, textBox5.Text);
+            try
+            {
+                if (con.conectar())
+                {
+                    Clases.Establecimiento.actualizarEstablecimiento(con.conexion, pac);
+                    MessageBox.Show("Establecimiento actualizado exitosamente");
+                    comboBox1.Text = "";
+                    comboBox2.Text = "";
+                    textBox3.Text = "";
+                    comboBox3.Text = "";
+                    textBox4.Text = "";
+                    textBox5.Text = "";
+                }
 
-            /*
+            
             }
             catch (MySqlException ex)
             {
                 MessageBox.Show("error es probable que el establecimiento ya esté registrado" + ex);
             }
-            con.desconectar();*/
+            con.desconectar();
+        }
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

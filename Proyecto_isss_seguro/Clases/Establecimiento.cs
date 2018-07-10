@@ -89,7 +89,7 @@ namespace Proyecto_isss_seguro.Clases
         }
         public static void actualizarEstablecimiento(MySqlConnection conexion, Establecimiento est)
         {
-            /*String query = "UPDATE establecimiento set IDENTIDAD = '" + est.idEntidad + "', IDREGION = '" + est.idRegion + "', NOMBREESTABLECIMIENTO = '"+ est.nombreEstablecimiento + "', TIPOESTABLECIMIENTO = '" + est.tipoEstablecimiento + "', DIRECCIONESTABLECIMIENTO = '"+ est.direccionEstablecimiento + "', TELEFONOESTABLECIMIENTO = '" +est.telefonoEstablecimiento + "'";
+            String query = "UPDATE establecimiento set IDENTIDAD = '" + est.idEntidad + "', IDREGION = '" + est.idRegion + "', NOMBREESTABLECIMIENTO = '"+ est.nombreEstablecimiento + "', TIPOESTABLECIMIENTO = '" + est.tipoEstablecimiento + "', DIRECCIONESTABLECIMIENTO = '"+ est.direccionEstablecimiento + "', TELEFONOESTABLECIMIENTO = '" +est.telefonoEstablecimiento + "' where IdEstablecimiento = '" + est.idEstablecimiento + "'";
             try
             {
                 MySqlCommand comando = new MySqlCommand(query, conexion);
@@ -97,7 +97,7 @@ namespace Proyecto_isss_seguro.Clases
 
             }
             catch (MySqlException ex)
-            { throw ex; }*/
+            { throw ex; }
         }
     }
 }
