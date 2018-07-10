@@ -56,5 +56,24 @@ namespace Proyecto_isss_seguro
             Menu_Muestra vnt0 = new Menu_Muestra();
             vnt0.Show();
         }
+
+        private void textBox1_KeyUp(object sender, KeyEventArgs e)
+        {
+            con.conectar();
+
+            MySqlCommand cmd = con.conexion.CreateCommand();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "select * from usuario where NOMBRES like('" + textBox1.Text + "%') or APELLIDOS like('" + textBox1.Text + "%') or USUARIO like('" + textBox1.Text + "%') or TIPOUSUARIO like('" + textBox1.Text + "%')";
+            cmd.ExecuteNonQuery();
+
+            DataTable dt = new DataTable();
+            MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+
+            da.Fill(dt);
+
+            dataGridView1.DataSource = dt;
+
+            con.desconectar();
+        }
     }
 }

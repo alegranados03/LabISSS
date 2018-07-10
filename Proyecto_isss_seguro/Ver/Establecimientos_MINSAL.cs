@@ -51,5 +51,24 @@ namespace Proyecto_isss_seguro
             Menu_Establecimiento vnt0 = new Menu_Establecimiento();
             vnt0.Show();
         }
+
+        private void textBox1_KeyUp(object sender, KeyEventArgs e)
+        {
+            con.conectar();
+
+            MySqlCommand cmd = con.conexion.CreateCommand();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "select * from establecimiento where IDENTIDAD like('2') or NOMBREESTABLECIMIENTO like('" + textBox1.Text + "%') or TIPOESTABLECIMIENTO like('" + textBox1.Text + "')";
+            cmd.ExecuteNonQuery();
+
+            DataTable dt = new DataTable();
+            MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+
+            da.Fill(dt);
+
+            dataGridView1.DataSource = dt;
+
+            con.desconectar();
+        }
     }
 }

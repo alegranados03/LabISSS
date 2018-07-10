@@ -99,6 +99,18 @@ namespace Proyecto_isss_seguro.Clases
 
 
         }
+        public static void actualizarPaciente(MySqlConnection conexion, Paciente paciente)
+        {
+            String query = "UPDATE paciente set NOAFILIACION = '" + paciente.noafiliacion + "', NOMBRE = '" + paciente.nombre + "', APELLIDO = '" + paciente.apellido + "', DIRECCION = '" + paciente.direccion + "', GRUPOSANGUINEO = '" + paciente.grupoSanguineo + "', FACTORRH = '" + paciente.factorRH + "', GENERO = '" + paciente.genero + "', VIH = '" + paciente.vih + "', EDAD = '" + paciente.edad + "', TELEFONOPACIENTE = '" + paciente.telefono + "' where idpaciente = '" + paciente.idPaciente + "'";
+            try
+            {
+                MySqlCommand comando = new MySqlCommand(query, conexion);
+                Int32 lector = (Int32)comando.ExecuteNonQuery();
+
+            }
+            catch (MySqlException ex)
+            { throw ex; }
+        }
     }
 
 }

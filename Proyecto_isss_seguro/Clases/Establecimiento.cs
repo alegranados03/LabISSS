@@ -77,7 +77,7 @@ namespace Proyecto_isss_seguro.Clases
 
         public static void insertarEstablecimiento(MySqlConnection conexion, Establecimiento est)
         {
- String query = "INSERT INTO establecimiento(IDENTIDAD, IDREGION, NOMBREESTABLECIMIENTO, TIPOESTABLECIMIENTO, DIRECCIONESTABLECIMIENTO, TELEFONOESTABLECIMIENTO) VALUES ('"+ est.idEntidad + "','"+ est.idRegion + "','"+ est.nombreEstablecimiento + "','" + est.tipoEstablecimiento + "','"+ est.direccionEstablecimiento + "','" +est.telefonoEstablecimiento + "')";
+            String query = "INSERT INTO establecimiento(IDENTIDAD, IDREGION, NOMBREESTABLECIMIENTO, TIPOESTABLECIMIENTO, DIRECCIONESTABLECIMIENTO, TELEFONOESTABLECIMIENTO) VALUES ('"+ est.idEntidad + "','"+ est.idRegion + "','"+ est.nombreEstablecimiento + "','" + est.tipoEstablecimiento + "','"+ est.direccionEstablecimiento + "','" +est.telefonoEstablecimiento + "')";
             try
             {
                 MySqlCommand comando = new MySqlCommand(query, conexion);
@@ -86,9 +86,18 @@ namespace Proyecto_isss_seguro.Clases
             }
             catch (MySqlException ex)
             { throw ex; }
+        }
+        public static void actualizarEstablecimiento(MySqlConnection conexion, Establecimiento est)
+        {
+            /*String query = "UPDATE establecimiento set IDENTIDAD = '" + est.idEntidad + "', IDREGION = '" + est.idRegion + "', NOMBREESTABLECIMIENTO = '"+ est.nombreEstablecimiento + "', TIPOESTABLECIMIENTO = '" + est.tipoEstablecimiento + "', DIRECCIONESTABLECIMIENTO = '"+ est.direccionEstablecimiento + "', TELEFONOESTABLECIMIENTO = '" +est.telefonoEstablecimiento + "'";
+            try
+            {
+                MySqlCommand comando = new MySqlCommand(query, conexion);
+                Int32 lector = (Int32)comando.ExecuteNonQuery();
 
-
-
+            }
+            catch (MySqlException ex)
+            { throw ex; }*/
         }
     }
 }
