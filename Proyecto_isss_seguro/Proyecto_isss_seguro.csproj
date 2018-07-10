@@ -72,7 +72,9 @@
     </Compile>
     <Compile Include="Clases\Conexion.cs" />
     <Compile Include="Clases\Establecimiento.cs" />
+    <Compile Include="Clases\Muestra.cs" />
     <Compile Include="Clases\Paciente.cs" />
+    <Compile Include="Clases\Prueba.cs" />
     <Compile Include="Clases\User.cs" />
     <Compile Include="Establecimientos_ISSS.cs">
       <SubType>Form</SubType>

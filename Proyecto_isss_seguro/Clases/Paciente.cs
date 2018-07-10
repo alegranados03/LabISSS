@@ -99,6 +99,26 @@ namespace Proyecto_isss_seguro.Clases
 
 
         }
+
+
+
+        public static MySqlDataReader cargarPaciente(MySqlConnection conexion, String id)
+        {
+            String query = "select * from paciente where idPaciente='"+id+"'";
+            try
+            {
+                MySqlCommand comando = new MySqlCommand(query, conexion);
+                MySqlDataReader datos = null; comando.ExecuteReader();
+
+                return datos;
+
+            }
+            catch (MySqlException ex)
+            { throw ex; }
+
+
+
+        }
     }
 
 }
