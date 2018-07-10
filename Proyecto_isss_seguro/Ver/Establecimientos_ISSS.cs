@@ -94,7 +94,7 @@ namespace Proyecto_isss_seguro
         private void button2_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Actualizar.Actualizar_Establecimiento_ISSS vnt1 = new Actualizar.Actualizar_Establecimiento_ISSS();
+            Actualizar.Actualizar_Establecimiento vnt1 = new Actualizar.Actualizar_Establecimiento();
             vnt1.label7.Text = IdEstablecimiento;
             vnt1.comboBox2.Text = cambiarEntidadString(IdEntidad);
             vnt1.comboBox1.Text = cambiarRegionString(IdRegion);

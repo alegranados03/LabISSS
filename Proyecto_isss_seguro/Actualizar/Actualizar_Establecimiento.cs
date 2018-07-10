@@ -11,24 +11,34 @@ using MySql.Data.MySqlClient;
 
 namespace Proyecto_isss_seguro.Actualizar
 {
-    public partial class Actualizar_Establecimiento_ISSS : Form
+    public partial class Actualizar_Establecimiento : Form
     {
+        public String anterior;
+
         Clases.Conexion con = new Clases.Conexion();
-        public Actualizar_Establecimiento_ISSS()
+        public Actualizar_Establecimiento()
         {
             InitializeComponent();
         }
-
         private void button2_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Establecimientos_ISSS vnt0 = new Establecimientos_ISSS();
-            vnt0.Show();
+            if (anterior == "ISSS")
+            {
+                this.Hide();
+                Establecimientos_ISSS vnt0 = new Establecimientos_ISSS();
+                vnt0.Show();
+            }
+            else
+            {
+                this.Hide();
+                Establecimientos_MINSAL vnt0 = new Establecimientos_MINSAL();
+                vnt0.Show();
+            }
         }
 
         private void Actualizar_Establecimiento_ISSS_Load(object sender, EventArgs e)
         {
-
+            anterior = comboBox2.Text;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -107,6 +117,18 @@ namespace Proyecto_isss_seguro.Actualizar
                 MessageBox.Show("error es probable que el establecimiento ya esté registrado" + ex);
             }
             con.desconectar();
+            if(anterior == "ISSS")
+            {
+                this.Hide();
+                Establecimientos_ISSS vnt0 = new Establecimientos_ISSS();
+                vnt0.Show();
+            }
+            else
+            {
+                this.Hide();
+                Establecimientos_MINSAL vnt0 = new Establecimientos_MINSAL();
+                vnt0.Show();
+            }
         }
 
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)

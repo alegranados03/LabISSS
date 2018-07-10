@@ -46,11 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Actualizar\Actualizar_Establecimiento_ISSS.cs">
+    <Compile Include="Actualizar\Actualizar_Establecimiento.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Actualizar\Actualizar_Establecimiento_ISSS.Designer.cs">
-      <DependentUpon>Actualizar_Establecimiento_ISSS.cs</DependentUpon>
+    <Compile Include="Actualizar\Actualizar_Establecimiento.Designer.cs">
+      <DependentUpon>Actualizar_Establecimiento.cs</DependentUpon>
     </Compile>
     <Compile Include="Actualizar\Actualizar_Paciente.cs">
       <SubType>Form</SubType>
@@ -228,8 +228,8 @@
     <Compile Include="Ver\Ver_Usuario.Designer.cs">
       <DependentUpon>Ver_Usuario.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Actualizar\Actualizar_Establecimiento_ISSS.resx">
-      <DependentUpon>Actualizar_Establecimiento_ISSS.cs</DependentUpon>
+    <EmbeddedResource Include="Actualizar\Actualizar_Establecimiento.resx">
+      <DependentUpon>Actualizar_Establecimiento.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Actualizar\Actualizar_Paciente.resx">
       <DependentUpon>Actualizar_Paciente.cs</DependentUpon>

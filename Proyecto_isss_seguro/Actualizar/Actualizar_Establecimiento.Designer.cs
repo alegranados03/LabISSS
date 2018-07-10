@@ -1,6 +1,6 @@
 ﻿namespace Proyecto_isss_seguro.Actualizar
 {
-    partial class Actualizar_Establecimiento_ISSS
+    partial class Actualizar_Establecimiento
     {
         /// <summary>
         /// Required designer variable.

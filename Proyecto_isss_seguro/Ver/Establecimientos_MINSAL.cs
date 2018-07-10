@@ -70,5 +70,12 @@ namespace Proyecto_isss_seguro
 
             con.desconectar();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Actualizar.Actualizar_Establecimiento vnt0 = new Actualizar.Actualizar_Establecimiento();
+            vnt0.Show();
+        }
     }
 }
