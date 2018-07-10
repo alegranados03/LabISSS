@@ -55,5 +55,10 @@ namespace Proyecto_isss_seguro.Actualizar
             }
             con.desconectar();
         }
+
+        private void Actualizar_Paciente_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

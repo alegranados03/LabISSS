@@ -114,3 +114,4 @@ C:\Users\Cesar Flores\Documents\GitHub\LabISSS\Proyecto_isss_seguro\obj\Debug\Pr
 C:\Users\Cesar Flores\Documents\GitHub\LabISSS\Proyecto_isss_seguro\obj\Debug\Proyecto_isss_seguro.Actualizar.Actualizar_Establecimiento.resources
 C:\Users\Cesar Flores\Documents\GitHub\LabISSS\Proyecto_isss_seguro\obj\Debug\Proyecto_isss_seguro.Ver.Expediente.resources
 C:\Users\Cesar Flores\Documents\GitHub\LabISSS\Proyecto_isss_seguro\obj\Debug\Proyecto_isss_seguro.Actualizar.Actualizar_Usuario.resources
+C:\Users\Cesar Flores\Documents\GitHub\LabISSS\Proyecto_isss_seguro\obj\Debug\Proyecto_isss_seguro.Ver.expedientemuestra.resources

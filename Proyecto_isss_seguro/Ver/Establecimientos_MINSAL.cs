@@ -103,13 +103,13 @@ namespace Proyecto_isss_seguro
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            IdEstablecimiento = dataGridView1.Rows[e.RowIndex].Cells["IdEstablecimiento"].Value.ToString();
-            IdEntidad = dataGridView1.Rows[e.RowIndex].Cells["IdEntidad"].Value.ToString();
-            IdRegion = dataGridView1.Rows[e.RowIndex].Cells["IdRegion"].Value.ToString();
-            NombreEstablecimiento = dataGridView1.Rows[e.RowIndex].Cells["NombreEstablecimiento"].Value.ToString();
-            TipoEstablecimiento = dataGridView1.Rows[e.RowIndex].Cells["TipoEstablecimiento"].Value.ToString();
-            DireccionEstablecimiento = dataGridView1.Rows[e.RowIndex].Cells["DireccionEstablecimiento"].Value.ToString();
-            TelefonoEstablecimiento = dataGridView1.Rows[e.RowIndex].Cells["TelefonoEstablecimiento"].Value.ToString();
+            IdEstablecimiento = dataGridView1.Rows[e.RowIndex].Cells["Column1"].Value.ToString();
+            IdEntidad = dataGridView1.Rows[e.RowIndex].Cells["Column2"].Value.ToString();
+            IdRegion = dataGridView1.Rows[e.RowIndex].Cells["Column3"].Value.ToString();
+            NombreEstablecimiento = dataGridView1.Rows[e.RowIndex].Cells["Column4"].Value.ToString();
+            TipoEstablecimiento = dataGridView1.Rows[e.RowIndex].Cells["Column5"].Value.ToString();
+            DireccionEstablecimiento = dataGridView1.Rows[e.RowIndex].Cells["Column6"].Value.ToString();
+            TelefonoEstablecimiento = dataGridView1.Rows[e.RowIndex].Cells["Column7"].Value.ToString();
         }
 
         public static String cambiarRegionString(String idRegion)

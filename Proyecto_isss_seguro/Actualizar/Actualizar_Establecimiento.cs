@@ -19,6 +19,9 @@ namespace Proyecto_isss_seguro.Actualizar
         public Actualizar_Establecimiento()
         {
             InitializeComponent();
+            comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBox2.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBox3.DropDownStyle = ComboBoxStyle.DropDownList;
         }
         private void button2_Click(object sender, EventArgs e)
         {

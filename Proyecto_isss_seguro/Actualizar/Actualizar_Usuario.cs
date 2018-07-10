@@ -11,7 +11,6 @@ using MySql.Data.MySqlClient;
 
 namespace Proyecto_isss_seguro.Actualizar
 {
-
     public partial class Actualizar_Usuario : Form
     {
         Clases.Conexion con = new Clases.Conexion();
@@ -29,13 +28,13 @@ namespace Proyecto_isss_seguro.Actualizar
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Clases.User use = new Clases.User(Convert.ToInt32(label6.Text), textBox1.Text, textBox2.Text, textBox3.Text, textBox4.Text, CmbCargo2.Text);
+            Clases.User pac = new Clases.User(Convert.ToInt32(label6.Text), textBox1.Text, textBox2.Text, textBox3.Text, textBox4.Text, CmbCargo2.Text);
             try
             {
                 if (con.conectar())
                 {
-                    Clases.User.actualizarUsuario(con.conexion, use);
-                    MessageBox.Show("Paciente actualizado exitosamente");
+                    Clases.User.actualizarUsuario(con.conexion, pac);
+                    MessageBox.Show("Usuario actualizado exitosamente");
                     textBox1.Text = "";
                     textBox2.Text = "";
                     textBox3.Text = "";
@@ -46,14 +45,9 @@ namespace Proyecto_isss_seguro.Actualizar
             }
             catch (MySqlException ex)
             {
-                MessageBox.Show("error es probable que el Usuario ya esté registrado" + ex);
+                MessageBox.Show("error es probable que el número de afiliación ya esté registrado" + ex);
             }
             con.desconectar();
-        }
-
-        private void Actualizar_Usuario_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

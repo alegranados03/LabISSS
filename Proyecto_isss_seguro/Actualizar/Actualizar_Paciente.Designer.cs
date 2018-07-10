@@ -288,6 +288,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Actualizar_Paciente";
             this.Text = "Actualizar_Paciente";
+            this.Load += new System.EventHandler(this.Actualizar_Paciente_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
