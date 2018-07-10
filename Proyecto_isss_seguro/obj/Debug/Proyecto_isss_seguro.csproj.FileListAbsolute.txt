@@ -112,3 +112,4 @@ C:\Users\usuario\Documents\GitHub\LabISSS\Proyecto_isss_seguro\obj\Debug\Proyect
 C:\Users\usuario\Documents\GitHub\LabISSS\Proyecto_isss_seguro\obj\Debug\Proyecto_isss_seguro.Ver_Prueba_GX.resources
 C:\Users\Cesar Flores\Documents\GitHub\LabISSS\Proyecto_isss_seguro\obj\Debug\Proyecto_isss_seguro.Actualizar.Actualizar_Paciente.resources
 C:\Users\Cesar Flores\Documents\GitHub\LabISSS\Proyecto_isss_seguro\obj\Debug\Proyecto_isss_seguro.Actualizar.Actualizar_Establecimiento.resources
+C:\Users\Cesar Flores\Documents\GitHub\LabISSS\Proyecto_isss_seguro\obj\Debug\Proyecto_isss_seguro.Ver.Expediente.resources

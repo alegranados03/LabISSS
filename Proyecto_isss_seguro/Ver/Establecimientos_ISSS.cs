@@ -19,7 +19,7 @@ namespace Proyecto_isss_seguro
             InitializeComponent();
         }
 
-        public static String IdEstablecimiento;
+        public static String IdEstablecimiento = null;
         public static string IdEntidad;
         public static string IdRegion;
         public static string NombreEstablecimiento;
@@ -67,7 +67,7 @@ namespace Proyecto_isss_seguro
 
             MySqlCommand cmd = con.conexion.CreateCommand();
             cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "select * from establecimiento where IDENTIDAD like('1') and NOMBREESTABLECIMIENTO like('" + textBox1.Text + "%') or TIPOESTABLECIMIENTO like('" + textBox1.Text + "%')";
+            cmd.CommandText = "select * from establecimiento where IDENTIDAD like('1') and (NOMBREESTABLECIMIENTO like('" + textBox1.Text + "%') or TIPOESTABLECIMIENTO like('" + textBox1.Text + "%'))";
             cmd.ExecuteNonQuery();
 
             DataTable dt = new DataTable();
@@ -93,16 +93,23 @@ namespace Proyecto_isss_seguro
 
         private void button2_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Actualizar.Actualizar_Establecimiento vnt1 = new Actualizar.Actualizar_Establecimiento();
-            vnt1.label7.Text = IdEstablecimiento;
-            vnt1.comboBox2.Text = cambiarEntidadString(IdEntidad);
-            vnt1.comboBox1.Text = cambiarRegionString(IdRegion);
-            vnt1.textBox3.Text = NombreEstablecimiento;
-            vnt1.comboBox3.Text = TipoEstablecimiento;
-            vnt1.textBox4.Text = DireccionEstablecimiento;
-            vnt1.textBox5.Text = TelefonoEstablecimiento;
-            vnt1.Show();
+            if (IdEstablecimiento != null)
+            {
+                this.Hide();
+                Actualizar.Actualizar_Establecimiento vnt1 = new Actualizar.Actualizar_Establecimiento();
+                vnt1.label7.Text = IdEstablecimiento;
+                vnt1.comboBox2.Text = cambiarEntidadString(IdEntidad);
+                vnt1.comboBox1.Text = cambiarRegionString(IdRegion);
+                vnt1.textBox3.Text = NombreEstablecimiento;
+                vnt1.comboBox3.Text = TipoEstablecimiento;
+                vnt1.textBox4.Text = DireccionEstablecimiento;
+                vnt1.textBox5.Text = TelefonoEstablecimiento;
+                vnt1.Show();
+            }
+            else
+            {
+                MessageBox.Show("Debe seleccionar un paciente");
+            }
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
