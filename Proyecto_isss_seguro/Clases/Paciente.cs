@@ -99,6 +99,7 @@ namespace Proyecto_isss_seguro.Clases
 
 
         }
+<<<<<<< HEAD
         public static void actualizarPaciente(MySqlConnection conexion, Paciente paciente)
         {
             String query = "UPDATE paciente set NOAFILIACION = '" + paciente.noafiliacion + "', NOMBRE = '" + paciente.nombre + "', APELLIDO = '" + paciente.apellido + "', DIRECCION = '" + paciente.direccion + "', GRUPOSANGUINEO = '" + paciente.grupoSanguineo + "', FACTORRH = '" + paciente.factorRH + "', GENERO = '" + paciente.genero + "', VIH = '" + paciente.vih + "', EDAD = '" + paciente.edad + "', TELEFONOPACIENTE = '" + paciente.telefono + "' where idpaciente = '" + paciente.idPaciente + "'";
@@ -106,10 +107,30 @@ namespace Proyecto_isss_seguro.Clases
             {
                 MySqlCommand comando = new MySqlCommand(query, conexion);
                 Int32 lector = (Int32)comando.ExecuteNonQuery();
+=======
+
+
+
+        public static MySqlDataReader cargarPaciente(MySqlConnection conexion, String id)
+        {
+            String query = "select * from paciente where idPaciente='"+id+"'";
+            try
+            {
+                MySqlCommand comando = new MySqlCommand(query, conexion);
+                MySqlDataReader datos = null; comando.ExecuteReader();
+
+                return datos;
+>>>>>>> 36567d1e3b384d95f97644027fd0ca921093b614
 
             }
             catch (MySqlException ex)
             { throw ex; }
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> 36567d1e3b384d95f97644027fd0ca921093b614
         }
     }
 
