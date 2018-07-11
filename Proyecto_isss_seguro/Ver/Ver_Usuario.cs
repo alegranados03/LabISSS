@@ -33,8 +33,12 @@ namespace Proyecto_isss_seguro
                 {
                     if (con.conectar())
                     {
-                        Clases.User.EliminarUsuario(con.conexion, IdUsuario);
-                        MessageBox.Show("Borrado exitosamente");
+                        if(MessageBox.Show("¿Esta seguro que desea eliminar el usuario?", "Eliminar", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                        {
+                            Clases.User.EliminarUsuario(con.conexion, IdUsuario);
+                            MessageBox.Show("Borrado exitosamente");
+                        }
+                        
                     }
 
                 }
