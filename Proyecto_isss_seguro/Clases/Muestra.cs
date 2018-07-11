@@ -49,7 +49,7 @@ namespace Proyecto_isss_seguro.Clases
 
             try
             {
-                MySqlCommand comando = new MySqlCommand(string.Format("select * from muestra where IDPACIENTE='" + idPaciente + "'"), conexion);
+                MySqlCommand comando = new MySqlCommand(string.Format("select IDMUESTRA, IDTIPODEMUESTRA, IDPACIENTE, OBSERVACIONMUESTRA, IDESTABLECIMIENTOREFE, IDESTABLECIMEINTOCULTI from muestra where IDPACIENTE='" + idPaciente + "'"), conexion);
                 MySqlDataAdapter dataAdapter = new MySqlDataAdapter(comando);
                 dataAdapter.Fill(datat);
                 dgv.DataSource = datat;
@@ -64,8 +64,9 @@ namespace Proyecto_isss_seguro.Clases
 
         public static void insertarMuestra(MySqlConnection conexion,Muestra mu)
         {
-            String query = "INSERT INTO muestra(IDTIPODEMUESTRA, IDPACIENTE, FECHA, OBSERVACIONMUESTRA, IDESTABLECIMIENTOREFE, IDESTABLECIMIENTOCULTI) VALUES('" + mu.idtipomuestra + "','" + mu.idpaciente + "','" + mu.fecha + "','" + mu.observacionMuestra + "','" + mu.idestablecimientorefe + "','" + mu.idestablecimientoculti + "'";
-            try
+            Console.WriteLine("valor del tipo de muestra: "+mu.idtipomuestra);
+            String query = "INSERT INTO muestra(IDTIPODEMUESTRA, IDPACIENTE, FECHA, OBSERVACIONMUESTRA, IDESTABLECIMIENTOREFE, IDESTABLECIMEINTOCULTI) VALUES ('"+mu.idtipomuestra+"','"+mu.idpaciente+"','"+mu.fecha+"','"+mu.observacionMuestra+"','"+mu.idestablecimientorefe+"','"+mu.idestablecimientoculti+"')";
+              try
             {
                 MySqlCommand comando = new MySqlCommand(query, conexion);
                 Int32 lector = (Int32)comando.ExecuteNonQuery();
