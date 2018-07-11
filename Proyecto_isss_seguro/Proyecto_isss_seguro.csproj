@@ -52,6 +52,12 @@
     <Compile Include="Actualizar\Actualizar_Establecimiento.Designer.cs">
       <DependentUpon>Actualizar_Establecimiento.cs</DependentUpon>
     </Compile>
+    <Compile Include="Actualizar\Actualizar_Muestra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Actualizar\Actualizar_Muestra.Designer.cs">
+      <DependentUpon>Actualizar_Muestra.cs</DependentUpon>
+    </Compile>
     <Compile Include="Actualizar\Actualizar_Paciente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -249,6 +255,9 @@
     </Compile>
     <EmbeddedResource Include="Actualizar\Actualizar_Establecimiento.resx">
       <DependentUpon>Actualizar_Establecimiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Actualizar\Actualizar_Muestra.resx">
+      <DependentUpon>Actualizar_Muestra.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Actualizar\Actualizar_Paciente.resx">
       <DependentUpon>Actualizar_Paciente.cs</DependentUpon>

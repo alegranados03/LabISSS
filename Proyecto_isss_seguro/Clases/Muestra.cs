@@ -75,5 +75,17 @@ namespace Proyecto_isss_seguro.Clases
             { throw ex; }
 
         }
+        public static void actualizarMuestra(MySqlConnection conexion, Muestra mu)
+        {
+            String query = "update muestra set IDTIPODEMUESTRA = '" + mu.idtipomuestra + "', IDPACIENTE = '" + mu.idpaciente + "', OBSERVACIONMUESTRA = '"+mu.observacionMuestra+"', IDESTABLECIMIENTOREFE = '"+mu.idestablecimientorefe+"', IDESTABLECIMEINTOCULTI = '"+mu.idestablecimientoculti+"' where idmuestra = '" +mu.idmuestra+"'";
+            try
+            {
+                MySqlCommand comando = new MySqlCommand(query, conexion);
+                Int32 lector = (Int32)comando.ExecuteNonQuery();
+
+            }
+            catch (MySqlException ex)
+            { throw ex; }
+        }
     }
 }

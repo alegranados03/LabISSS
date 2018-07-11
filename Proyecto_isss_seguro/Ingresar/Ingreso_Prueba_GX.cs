@@ -20,7 +20,7 @@ namespace Proyecto_isss_seguro
         private void buttoncancelar_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Ingresar_Prueba_Registrada vnt0 = new Ingresar_Prueba_Registrada();
+            Ver_Prueba vnt0 = new Ver_Prueba();
             vnt0.Show();
         }
     }

@@ -76,6 +76,7 @@
             this.button3.TabIndex = 104;
             this.button3.Text = "Informacion de la muestra";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // label20
             // 
@@ -175,6 +176,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(659, 259);
             this.dataGridView1.TabIndex = 92;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // button4
             // 

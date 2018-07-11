@@ -129,3 +129,4 @@ C:\Users\Ricardo Granados\Desktop\proyectoisss\Proyecto_isss_seguro\obj\Debug\Pr
 C:\Users\Ricardo Granados\Desktop\proyectoisss\Proyecto_isss_seguro\obj\Debug\Proyecto_isss_seguro.Registrar_Prueba.resources
 C:\Users\Ricardo Granados\Desktop\proyectoisss\Proyecto_isss_seguro\obj\Debug\Proyecto_isss_seguro.Ver.Expediente.resources
 C:\Users\Ricardo Granados\Desktop\proyectoisss\Proyecto_isss_seguro\obj\Debug\Proyecto_isss_seguro.Ver.expedientemuestra.resources
+C:\Users\Cesar Flores\Documents\GitHub\LabISSS\Proyecto_isss_seguro\obj\Debug\Proyecto_isss_seguro.Actualizar.Actualizar_Muestra.resources
