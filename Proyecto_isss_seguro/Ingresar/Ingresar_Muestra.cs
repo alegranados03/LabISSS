@@ -84,7 +84,7 @@ namespace Proyecto_isss_seguro
             {
                 if (con.conectar())
                 {
-                    Clases.Muestra mu = new Clases.Muestra(Convert.ToInt32(comboBox1.SelectedValue), Convert.ToInt32(label7.Text), dateTimePicker2.Text, textBoxObservacion.Text, Convert.ToInt32(comboBox1.SelectedValue), Convert.ToInt32(comboBox2.SelectedValue));
+                    Clases.Muestra mu = new Clases.Muestra(Convert.ToInt32(comboBox1.SelectedValue), Convert.ToInt32(label7.Text), dateTimePicker2.Value.ToString(), textBoxObservacion.Text, Convert.ToInt32(comboBox1.SelectedValue), Convert.ToInt32(comboBox2.SelectedValue));
                     Clases.Muestra.insertarMuestra(con.conexion, mu);
                     MessageBox.Show("Muestra Ingresada Exitosamente");
                 }

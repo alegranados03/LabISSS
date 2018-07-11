@@ -64,8 +64,7 @@ namespace Proyecto_isss_seguro.Clases
 
         public static void insertarMuestra(MySqlConnection conexion,Muestra mu)
         {
-            Console.WriteLine("valor del tipo de muestra: "+mu.idtipomuestra);
-            String query = "INSERT INTO muestra(IDTIPODEMUESTRA, IDPACIENTE, FECHA, OBSERVACIONMUESTRA, IDESTABLECIMIENTOREFE, IDESTABLECIMEINTOCULTI) VALUES ('"+mu.idtipomuestra+"','"+mu.idpaciente+"','"+mu.fecha+"','"+mu.observacionMuestra+"','"+mu.idestablecimientorefe+"','"+mu.idestablecimientoculti+"')";
+            String query = "INSERT INTO muestra(IDTIPODEMUESTRA, IDPACIENTE, OBSERVACIONMUESTRA, IDESTABLECIMIENTOREFE, IDESTABLECIMEINTOCULTI) VALUES ('"+mu.idtipomuestra+"','"+mu.idpaciente+"','"+mu.observacionMuestra+"','"+mu.idestablecimientorefe+"','"+mu.idestablecimientoculti+"')";
               try
             {
                 MySqlCommand comando = new MySqlCommand(query, conexion);
