@@ -44,7 +44,7 @@ namespace Proyecto_isss_seguro.Clases
 
             try
             {
-                MySqlCommand comando = new MySqlCommand(string.Format(("select * from establecimiento where identidad=1")), conexion);
+                MySqlCommand comando = new MySqlCommand(string.Format(("SELECT establecimiento.IDESTABLECIMIENTO, entidad.TIPODEENTIDAD as ENTIDAD , region.NOMBREREGION as REGION ,establecimiento.NOMBREESTABLECIMIENTO,establecimiento.TIPOESTABLECIMIENTO, establecimiento.DIRECCIONESTABLECIMIENTO,establecimiento.TELEFONOESTABLECIMIENTO FROM establecimiento inner join entidad on establecimiento.IDENTIDAD=entidad.IDENTIDAD inner join region on establecimiento.IDREGION=region.IDREGION where establecimiento.identidad=1")), conexion);
                 MySqlDataAdapter dataAdapter = new MySqlDataAdapter(comando);
                 dataAdapter.Fill(datat);
                 dgv.DataSource = datat;
@@ -62,7 +62,7 @@ namespace Proyecto_isss_seguro.Clases
 
             try
             {
-                MySqlCommand comando = new MySqlCommand(string.Format(("select * from establecimiento where identidad=2")), conexion);
+                MySqlCommand comando = new MySqlCommand(string.Format(("SELECT establecimiento.IDESTABLECIMIENTO, entidad.TIPODEENTIDAD as ENTIDAD , region.NOMBREREGION as REGION ,establecimiento.NOMBREESTABLECIMIENTO,establecimiento.TIPOESTABLECIMIENTO, establecimiento.DIRECCIONESTABLECIMIENTO,establecimiento.TELEFONOESTABLECIMIENTO FROM establecimiento inner join entidad on establecimiento.IDENTIDAD=entidad.IDENTIDAD inner join region on establecimiento.IDREGION=region.IDREGION where establecimiento.identidad=2")), conexion);
                 MySqlDataAdapter dataAdapter = new MySqlDataAdapter(comando);
                 dataAdapter.Fill(datat);
                 dgv.DataSource = datat;

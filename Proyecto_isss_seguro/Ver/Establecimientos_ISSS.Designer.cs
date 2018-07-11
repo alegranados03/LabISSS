@@ -108,14 +108,14 @@
             // 
             // Column2
             // 
-            this.Column2.DataPropertyName = "identidad";
+            this.Column2.DataPropertyName = "entidad";
             this.Column2.HeaderText = "Entidad";
             this.Column2.Name = "Column2";
             this.Column2.ReadOnly = true;
             // 
             // Column3
             // 
-            this.Column3.DataPropertyName = "idregion";
+            this.Column3.DataPropertyName = "region";
             this.Column3.HeaderText = "Region";
             this.Column3.Name = "Column3";
             this.Column3.ReadOnly = true;
