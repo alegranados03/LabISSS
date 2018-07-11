@@ -115,3 +115,17 @@ C:\Users\Cesar Flores\Documents\GitHub\LabISSS\Proyecto_isss_seguro\obj\Debug\Pr
 C:\Users\Cesar Flores\Documents\GitHub\LabISSS\Proyecto_isss_seguro\obj\Debug\Proyecto_isss_seguro.Ver.Expediente.resources
 C:\Users\Cesar Flores\Documents\GitHub\LabISSS\Proyecto_isss_seguro\obj\Debug\Proyecto_isss_seguro.Actualizar.Actualizar_Usuario.resources
 C:\Users\Cesar Flores\Documents\GitHub\LabISSS\Proyecto_isss_seguro\obj\Debug\Proyecto_isss_seguro.Ver.expedientemuestra.resources
+C:\Users\Ricardo Granados\Desktop\proyectoisss\Proyecto_isss_seguro\obj\Debug\Proyecto_isss_seguro.Actualizar.Actualizar_Establecimiento.resources
+C:\Users\Ricardo Granados\Desktop\proyectoisss\Proyecto_isss_seguro\obj\Debug\Proyecto_isss_seguro.Actualizar.Actualizar_Paciente.resources
+C:\Users\Ricardo Granados\Desktop\proyectoisss\Proyecto_isss_seguro\obj\Debug\Proyecto_isss_seguro.Actualizar.Actualizar_Usuario.resources
+C:\Users\Ricardo Granados\Desktop\proyectoisss\Proyecto_isss_seguro\obj\Debug\Proyecto_isss_seguro.CC_BK_General.resources
+C:\Users\Ricardo Granados\Desktop\proyectoisss\Proyecto_isss_seguro\obj\Debug\Proyecto_isss_seguro.CC_BK_Muestras.resources
+C:\Users\Ricardo Granados\Desktop\proyectoisss\Proyecto_isss_seguro\obj\Debug\Proyecto_isss_seguro.Ingresar_Prueba_ADA.resources
+C:\Users\Ricardo Granados\Desktop\proyectoisss\Proyecto_isss_seguro\obj\Debug\Proyecto_isss_seguro.Ingresar_Prueba_BK.resources
+C:\Users\Ricardo Granados\Desktop\proyectoisss\Proyecto_isss_seguro\obj\Debug\Proyecto_isss_seguro.Ingresar_Prueba_Registrada.resources
+C:\Users\Ricardo Granados\Desktop\proyectoisss\Proyecto_isss_seguro\obj\Debug\Proyecto_isss_seguro.Menu_Consolidados.resources
+C:\Users\Ricardo Granados\Desktop\proyectoisss\Proyecto_isss_seguro\obj\Debug\Proyecto_isss_seguro.Ingreso_Prueba_Baar.resources
+C:\Users\Ricardo Granados\Desktop\proyectoisss\Proyecto_isss_seguro\obj\Debug\Proyecto_isss_seguro.Ingreso_Prueba_GX.resources
+C:\Users\Ricardo Granados\Desktop\proyectoisss\Proyecto_isss_seguro\obj\Debug\Proyecto_isss_seguro.Registrar_Prueba.resources
+C:\Users\Ricardo Granados\Desktop\proyectoisss\Proyecto_isss_seguro\obj\Debug\Proyecto_isss_seguro.Ver.Expediente.resources
+C:\Users\Ricardo Granados\Desktop\proyectoisss\Proyecto_isss_seguro\obj\Debug\Proyecto_isss_seguro.Ver.expedientemuestra.resources

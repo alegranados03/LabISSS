@@ -10,10 +10,10 @@ namespace Proyecto_isss_seguro.Clases
 {
     class Establecimiento
     {
-        int idEstablecimiento { get; set; }
+      public  int idEstablecimiento { get; set; }
         int idEntidad { get; set; }
         int idRegion { get; set; }
-        String nombreEstablecimiento { get; set; }
+      public  String nombreEstablecimiento { get; set; }
         String tipoEstablecimiento { get; set; }
         String direccionEstablecimiento { get; set; }
         String telefonoEstablecimiento { get; set; }
@@ -101,20 +101,46 @@ namespace Proyecto_isss_seguro.Clases
         }
 
 
-        public static List<Establecimiento>cargarestablecimientos(MySqlConnection conexion)
+        public static List<Establecimiento>cargarestablecimientosrefamot(MySqlConnection conexion)
         
         {
         
- String query = "Select IDESTABLECIMIENTO, NOMBREESTABLECIMIENTO from establecimiento";
+ String query = "Select IDESTABLECIMIENTO, NOMBREESTABLECIMIENTO from establecimiento where TIPOESTABLECIMIENTO='De Referencia' or TIPOESTABLECIMIENTO='Ambos' or TIPOESTABLECIMIENTO='Otros'";
                 
             List<Establecimiento> le = new List<Establecimiento>();
             MySqlCommand comando = new MySqlCommand(query, conexion);
             MySqlDataReader rd = comando.ExecuteReader();
+
             while (rd.Read())
             {
                 Establecimiento es = new Establecimiento();
-                es.idEstablecimiento = Convert.ToInt32(rd["IDESTABLECIMIENTO"].ToString());
-                es.nombreEstablecimiento = rd["NOMBREESTABLECIMIENTO"].ToString();
+                es.idEstablecimiento = rd.GetInt32(0);
+                es.nombreEstablecimiento = rd.GetString(1);
+                Console.WriteLine("ESTABLECIMIENTO"+es.nombreEstablecimiento);
+                Console.WriteLine("SU ID"+es.idEstablecimiento);
+                le.Add(es);
+            }
+            return le;
+        }
+
+
+        public static List<Establecimiento> cargarestablecimientoscultamot(MySqlConnection conexion)
+
+        {
+
+            String query = "Select IDESTABLECIMIENTO, NOMBREESTABLECIMIENTO from establecimiento where TIPOESTABLECIMIENTO='De Cultivo' or TIPOESTABLECIMIENTO='Ambos' or TIPOESTABLECIMIENTO='Otros'";
+
+            List<Establecimiento> le = new List<Establecimiento>();
+            MySqlCommand comando = new MySqlCommand(query, conexion);
+            MySqlDataReader rd = comando.ExecuteReader();
+
+            while (rd.Read())
+            {
+                Establecimiento es = new Establecimiento();
+                es.idEstablecimiento = rd.GetInt32(0);
+                es.nombreEstablecimiento = rd.GetString(1);
+                Console.WriteLine("ESTABLECIMIENTO" + es.nombreEstablecimiento);
+                Console.WriteLine("SU ID" + es.idEstablecimiento);
                 le.Add(es);
             }
             return le;

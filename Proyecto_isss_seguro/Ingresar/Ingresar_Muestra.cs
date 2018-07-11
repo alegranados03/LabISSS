@@ -31,14 +31,14 @@ namespace Proyecto_isss_seguro
                 if (con.conectar() == true)
                 {
 
-                    comboBox1.DataSource = Clases.Establecimiento.cargarestablecimientos(con.conexion);
+                    comboBox1.DataSource = Clases.Establecimiento.cargarestablecimientosrefamot(con.conexion);
                     comboBox1.DisplayMember = "nombreEstablecimiento";
-                    //comboBox1.ValueMember = "idEstablecimiento";
+                    comboBox1.ValueMember = "idEstablecimiento";
                     con.desconectar();
                     con.conectar();
-                    comboBox2.DataSource = Clases.Establecimiento.cargarestablecimientos(con.conexion);
+                    comboBox2.DataSource = Clases.Establecimiento.cargarestablecimientoscultamot(con.conexion);
                     comboBox2.DisplayMember = "nombreEstablecimiento";
-                   // comboBox2.ValueMember = "idEstablecimiento";
+                   comboBox2.ValueMember = "idEstablecimiento";
                 }
 
             }

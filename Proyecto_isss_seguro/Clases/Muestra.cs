@@ -19,6 +19,28 @@ namespace Proyecto_isss_seguro.Clases
         int idestablecimientorefe;
         int idestablecimientoculti;
 
+        public Muestra() { }
+        public Muestra(int idmuestra, int idtipoprueba, int idpaciente, String fecha, String observacionMuestra, int idestablecimientorefe, int idestablecimientoculti)
+        {
+            this.idmuestra = idmuestra;
+            this.idtipoprueba = idtipoprueba;
+            this.idpaciente = idpaciente;
+            this.fecha = fecha;
+            this.observacionMuestra = observacionMuestra;
+            this.idestablecimientorefe = idestablecimientorefe;
+            this.idestablecimientoculti = idestablecimientoculti;
+        }
+
+        public Muestra( int idtipoprueba, int idpaciente, String fecha, String observacionMuestra, int idestablecimientorefe, int idestablecimientoculti)
+        {
+          
+            this.idtipoprueba = idtipoprueba;
+            this.idpaciente = idpaciente;
+            this.fecha = fecha;
+            this.observacionMuestra = observacionMuestra;
+            this.idestablecimientorefe = idestablecimientorefe;
+            this.idestablecimientoculti = idestablecimientoculti;
+        }
 
 
         public static void listarMuestras(MySqlConnection conexion,String idPaciente,DataGridView dgv)
