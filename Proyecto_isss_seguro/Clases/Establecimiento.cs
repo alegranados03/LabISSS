@@ -116,8 +116,6 @@ namespace Proyecto_isss_seguro.Clases
                 Establecimiento es = new Establecimiento();
                 es.idEstablecimiento = rd.GetInt32(0);
                 es.nombreEstablecimiento = rd.GetString(1);
-                Console.WriteLine("ESTABLECIMIENTO"+es.nombreEstablecimiento);
-                Console.WriteLine("SU ID"+es.idEstablecimiento);
                 le.Add(es);
             }
             return le;
@@ -139,8 +137,6 @@ namespace Proyecto_isss_seguro.Clases
                 Establecimiento es = new Establecimiento();
                 es.idEstablecimiento = rd.GetInt32(0);
                 es.nombreEstablecimiento = rd.GetString(1);
-                Console.WriteLine("ESTABLECIMIENTO" + es.nombreEstablecimiento);
-                Console.WriteLine("SU ID" + es.idEstablecimiento);
                 le.Add(es);
             }
             return le;

@@ -39,6 +39,11 @@ namespace Proyecto_isss_seguro
                     comboBox2.DataSource = Clases.Establecimiento.cargarestablecimientoscultamot(con.conexion);
                     comboBox2.DisplayMember = "nombreEstablecimiento";
                    comboBox2.ValueMember = "idEstablecimiento";
+                    con.desconectar();
+                    con.conectar();
+                    cbTipoMuestra.DataSource = Clases.TipoMuestra.cargarCbTipoMuestra(con.conexion);
+                    cbTipoMuestra.DisplayMember = "nombreTipoMuestra";
+                    cbTipoMuestra.ValueMember = "idTipoMuestra";
                 }
 
             }
@@ -68,6 +73,17 @@ namespace Proyecto_isss_seguro
         }
 
         private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonguardar_Click(object sender, EventArgs e)
+        {
+            Clases.Muestra mu = new Clases.Muestra(Convert.ToInt32(comboBox1.ValueMember), Convert.ToInt32(label7.Text),dateTimePicker2.Text,textBoxObservacion.Text, Convert.ToInt32(comboBox1.ValueMember), Convert.ToInt32(comboBox2.ValueMember));
+            Clases.Muestra.insertarMuestra(con.conexion,mu);
+        }
+
+        private void dateTimePicker2_ValueChanged(object sender, EventArgs e)
         {
 
         }

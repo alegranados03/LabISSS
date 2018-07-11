@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.comboBoxgruposanguineo = new System.Windows.Forms.ComboBox();
+            this.cbTipoMuestra = new System.Windows.Forms.ComboBox();
             this.buttonguardar = new System.Windows.Forms.Button();
             this.buttoncancelar = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
@@ -39,24 +39,24 @@
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBoxdireccion = new System.Windows.Forms.TextBox();
+            this.textBoxObservacion = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
-            // comboBoxgruposanguineo
+            // cbTipoMuestra
             // 
-            this.comboBoxgruposanguineo.FormattingEnabled = true;
-            this.comboBoxgruposanguineo.Items.AddRange(new object[] {
+            this.cbTipoMuestra.FormattingEnabled = true;
+            this.cbTipoMuestra.Items.AddRange(new object[] {
             "AB",
             "A",
             "B",
             "O",
             "**"});
-            this.comboBoxgruposanguineo.Location = new System.Drawing.Point(200, 98);
-            this.comboBoxgruposanguineo.Name = "comboBoxgruposanguineo";
-            this.comboBoxgruposanguineo.Size = new System.Drawing.Size(202, 21);
-            this.comboBoxgruposanguineo.TabIndex = 66;
+            this.cbTipoMuestra.Location = new System.Drawing.Point(200, 98);
+            this.cbTipoMuestra.Name = "cbTipoMuestra";
+            this.cbTipoMuestra.Size = new System.Drawing.Size(202, 21);
+            this.cbTipoMuestra.TabIndex = 66;
             // 
             // buttonguardar
             // 
@@ -66,6 +66,7 @@
             this.buttonguardar.TabIndex = 65;
             this.buttonguardar.Text = "Guardar";
             this.buttonguardar.UseVisualStyleBackColor = true;
+            this.buttonguardar.Click += new System.EventHandler(this.buttonguardar_Click);
             // 
             // buttoncancelar
             // 
@@ -130,6 +131,7 @@
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(202, 20);
             this.dateTimePicker2.TabIndex = 84;
+            this.dateTimePicker2.ValueChanged += new System.EventHandler(this.dateTimePicker2_ValueChanged);
             // 
             // label3
             // 
@@ -149,12 +151,12 @@
             this.label7.TabIndex = 87;
             this.label7.Text = "label7";
             // 
-            // textBoxdireccion
+            // textBoxObservacion
             // 
-            this.textBoxdireccion.Location = new System.Drawing.Point(200, 129);
-            this.textBoxdireccion.Name = "textBoxdireccion";
-            this.textBoxdireccion.Size = new System.Drawing.Size(202, 20);
-            this.textBoxdireccion.TabIndex = 60;
+            this.textBoxObservacion.Location = new System.Drawing.Point(200, 129);
+            this.textBoxObservacion.Name = "textBoxObservacion";
+            this.textBoxObservacion.Size = new System.Drawing.Size(202, 20);
+            this.textBoxObservacion.TabIndex = 60;
             // 
             // comboBox1
             // 
@@ -195,10 +197,10 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.dateTimePicker2);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.comboBoxgruposanguineo);
+            this.Controls.Add(this.cbTipoMuestra);
             this.Controls.Add(this.buttonguardar);
             this.Controls.Add(this.buttoncancelar);
-            this.Controls.Add(this.textBoxdireccion);
+            this.Controls.Add(this.textBoxObservacion);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
@@ -212,7 +214,7 @@
         }
 
         #endregion
-        private System.Windows.Forms.ComboBox comboBoxgruposanguineo;
+        private System.Windows.Forms.ComboBox cbTipoMuestra;
         private System.Windows.Forms.Button buttonguardar;
         private System.Windows.Forms.Button buttoncancelar;
         private System.Windows.Forms.Label label5;
@@ -223,7 +225,7 @@
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
         private System.Windows.Forms.Label label3;
         public System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBoxdireccion;
+        private System.Windows.Forms.TextBox textBoxObservacion;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.ComboBox comboBox2;
     }

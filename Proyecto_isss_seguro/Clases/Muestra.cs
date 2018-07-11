@@ -60,5 +60,11 @@ namespace Proyecto_isss_seguro.Clases
             }
 
         }
+
+
+        public static void insertarMuestra(MySqlConnection conexion,Muestra mu)
+        {
+
+        }
     }
 }

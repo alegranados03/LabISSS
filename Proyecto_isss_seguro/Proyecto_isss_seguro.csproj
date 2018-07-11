@@ -64,6 +64,7 @@
     <Compile Include="Actualizar\Actualizar_Usuario.Designer.cs">
       <DependentUpon>Actualizar_Usuario.cs</DependentUpon>
     </Compile>
+    <Compile Include="Clases\TipoMuestra.cs" />
     <Compile Include="Ingresar\Agregar_Establecimiento.cs">
       <SubType>Form</SubType>
     </Compile>
