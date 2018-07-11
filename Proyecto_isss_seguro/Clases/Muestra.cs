@@ -11,19 +11,19 @@ namespace Proyecto_isss_seguro.Clases
 {
     class Muestra
     {
-        int idmuestra;
-        int idtipoprueba;
-        int idpaciente;
-        String fecha;
-        String observacionMuestra;
-        int idestablecimientorefe;
-        int idestablecimientoculti;
+        public int idmuestra;
+        public int idtipomuestra;
+        public int idpaciente;
+        public String fecha;
+        public String observacionMuestra;
+        public int idestablecimientorefe;
+        public int idestablecimientoculti;
 
         public Muestra() { }
-        public Muestra(int idmuestra, int idtipoprueba, int idpaciente, String fecha, String observacionMuestra, int idestablecimientorefe, int idestablecimientoculti)
+        public Muestra(int idmuestra, int idtipomuestra, int idpaciente, String fecha, String observacionMuestra, int idestablecimientorefe, int idestablecimientoculti)
         {
             this.idmuestra = idmuestra;
-            this.idtipoprueba = idtipoprueba;
+            this.idtipomuestra = idtipomuestra;
             this.idpaciente = idpaciente;
             this.fecha = fecha;
             this.observacionMuestra = observacionMuestra;
@@ -31,10 +31,10 @@ namespace Proyecto_isss_seguro.Clases
             this.idestablecimientoculti = idestablecimientoculti;
         }
 
-        public Muestra( int idtipoprueba, int idpaciente, String fecha, String observacionMuestra, int idestablecimientorefe, int idestablecimientoculti)
+        public Muestra( int idtipomuestra, int idpaciente, String fecha, String observacionMuestra, int idestablecimientorefe, int idestablecimientoculti)
         {
           
-            this.idtipoprueba = idtipoprueba;
+            this.idtipomuestra = idtipomuestra;
             this.idpaciente = idpaciente;
             this.fecha = fecha;
             this.observacionMuestra = observacionMuestra;
@@ -64,6 +64,15 @@ namespace Proyecto_isss_seguro.Clases
 
         public static void insertarMuestra(MySqlConnection conexion,Muestra mu)
         {
+            String query = "INSERT INTO muestra(IDTIPODEMUESTRA, IDPACIENTE, FECHA, OBSERVACIONMUESTRA, IDESTABLECIMIENTOREFE, IDESTABLECIMIENTOCULTI) VALUES('" + mu.idtipomuestra + "','" + mu.idpaciente + "','" + mu.fecha + "','" + mu.observacionMuestra + "','" + mu.idestablecimientorefe + "','" + mu.idestablecimientoculti + "'";
+            try
+            {
+                MySqlCommand comando = new MySqlCommand(query, conexion);
+                Int32 lector = (Int32)comando.ExecuteNonQuery();
+
+            }
+            catch (MySqlException ex)
+            { throw ex; }
 
         }
     }

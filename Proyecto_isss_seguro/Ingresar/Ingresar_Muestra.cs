@@ -79,8 +79,19 @@ namespace Proyecto_isss_seguro
 
         private void buttonguardar_Click(object sender, EventArgs e)
         {
-            Clases.Muestra mu = new Clases.Muestra(Convert.ToInt32(comboBox1.ValueMember), Convert.ToInt32(label7.Text),dateTimePicker2.Text,textBoxObservacion.Text, Convert.ToInt32(comboBox1.ValueMember), Convert.ToInt32(comboBox2.ValueMember));
-            Clases.Muestra.insertarMuestra(con.conexion,mu);
+            
+            try
+            {
+                if (con.conectar())
+                {
+                    Clases.Muestra mu = new Clases.Muestra(Convert.ToInt32(comboBox1.ValueMember), Convert.ToInt32(label7.Text), dateTimePicker2.Text, textBoxObservacion.Text, Convert.ToInt32(comboBox1.ValueMember), Convert.ToInt32(comboBox2.ValueMember));
+                    Clases.Muestra.insertarMuestra(con.conexion, mu);
+                }
+            }catch(MySqlException ex)
+            {
+                MessageBox.Show("Error al insertar");
+            }
+            con.desconectar();
         }
 
         private void dateTimePicker2_ValueChanged(object sender, EventArgs e)
